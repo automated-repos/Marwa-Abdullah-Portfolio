@@ -1,0 +1,137 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { 
+  Cloud, 
+  Server, 
+  Database, 
+  GitBranch, 
+  Container, 
+  Monitor,
+  Shield,
+  Code,
+  Cpu,
+  Network
+} from "lucide-react";
+
+const SkillsSection = () => {
+  const skillCategories = [
+    {
+      title: "Cloud Platforms",
+      icon: Cloud,
+      skills: ["AWS", "Azure", "Google Cloud", "DigitalOcean", "Terraform", "CloudFormation"],
+      color: "text-blue-400"
+    },
+    {
+      title: "Containers & Orchestration",
+      icon: Container,
+      skills: ["Docker", "Kubernetes", "Helm", "Istio", "Docker Swarm", "Podman"],
+      color: "text-cyan-400"
+    },
+    {
+      title: "CI/CD & Version Control",
+      icon: GitBranch,
+      skills: ["Jenkins", "GitLab CI", "GitHub Actions", "ArgoCD", "Git", "Bitbucket"],
+      color: "text-green-400"
+    },
+    {
+      title: "Infrastructure & Servers",
+      icon: Server,
+      skills: ["Linux", "Nginx", "Apache", "Load Balancers", "Ansible", "Puppet"],
+      color: "text-purple-400"
+    },
+    {
+      title: "Monitoring & Observability",
+      icon: Monitor,
+      skills: ["Prometheus", "Grafana", "ELK Stack", "Datadog", "New Relic", "Jaeger"],
+      color: "text-orange-400"
+    },
+    {
+      title: "Database & Storage",
+      icon: Database,
+      skills: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "MinIO", "S3"],
+      color: "text-red-400"
+    },
+    {
+      title: "Security & Compliance",
+      icon: Shield,
+      skills: ["Vault", "SAST/DAST", "OWASP", "SSL/TLS", "IAM", "Security Scanning"],
+      color: "text-yellow-400"
+    },
+    {
+      title: "Programming & Scripting",
+      icon: Code,
+      skills: ["Python", "Bash", "Go", "YAML", "JSON", "PowerShell"],
+      color: "text-indigo-400"
+    }
+  ];
+
+  return (
+    <section id="skills" className="py-20 px-6 bg-section-gradient">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
+            Technical Skills
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            A comprehensive toolkit for modern infrastructure and operations
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {skillCategories.map((category, index) => (
+            <Card 
+              key={index} 
+              className="bg-card border-primary/20 shadow-card-shadow hover:shadow-skill-glow transition-all duration-300 hover:scale-105"
+            >
+              <CardContent className="p-6">
+                <div className="flex items-center mb-4">
+                  <category.icon className={`h-8 w-8 ${category.color} mr-3`} />
+                  <h3 className="text-lg font-semibold text-foreground">{category.title}</h3>
+                </div>
+                
+                <div className="space-y-2">
+                  {category.skills.map((skill, skillIndex) => (
+                    <Badge 
+                      key={skillIndex}
+                      variant="outline"
+                      className="mr-2 mb-2 bg-secondary/50 border-primary/30 text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-200"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        
+        <div className="mt-16 text-center">
+          <Card className="bg-card border-primary/20 shadow-card-shadow max-w-4xl mx-auto">
+            <CardContent className="p-8">
+              <h3 className="text-2xl font-bold text-primary mb-6">Core Philosophy</h3>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="text-center">
+                  <Cpu className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <h4 className="text-lg font-semibold mb-2">Automation First</h4>
+                  <p className="text-muted-foreground">Eliminate manual processes through intelligent automation</p>
+                </div>
+                <div className="text-center">
+                  <Network className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <h4 className="text-lg font-semibold mb-2">Scalable Architecture</h4>
+                  <p className="text-muted-foreground">Build systems that grow with your business needs</p>
+                </div>
+                <div className="text-center">
+                  <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <h4 className="text-lg font-semibold mb-2">Security Focused</h4>
+                  <p className="text-muted-foreground">Implement security best practices from the ground up</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default SkillsSection;
