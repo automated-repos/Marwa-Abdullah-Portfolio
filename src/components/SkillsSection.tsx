@@ -16,52 +16,46 @@ import {
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Cloud Platforms",
-      icon: Cloud,
-      skills: ["AWS", "Azure", "Google Cloud", "DigitalOcean", "Terraform", "CloudFormation"],
+      title: "Backend Development",
+      icon: Code,
+      skills: ["PHP", "Laravel", "REST API", "OOP", "MySQL", "MS SQL Server"],
       color: "text-blue-400"
     },
     {
-      title: "Containers & Orchestration",
-      icon: Container,
-      skills: ["Docker", "Kubernetes", "Helm", "Istio", "Docker Swarm", "Podman"],
+      title: "Frontend Technologies",
+      icon: Monitor,
+      skills: ["HTML", "CSS", "JavaScript", "ES6", "Angular", "ReactJs", "Bootstrap"],
       color: "text-cyan-400"
     },
     {
-      title: "CI/CD & Version Control",
+      title: "DevOps & CI/CD",
       icon: GitBranch,
-      skills: ["Jenkins", "GitLab CI", "GitHub Actions", "ArgoCD", "Git", "Bitbucket"],
+      skills: ["Git", "GitHub", "Bitbucket", "CI/CD", "Cloud Automation", "Scripting"],
       color: "text-green-400"
     },
     {
-      title: "Infrastructure & Servers",
-      icon: Server,
-      skills: ["Linux", "Nginx", "Apache", "Load Balancers", "Ansible", "Puppet"],
+      title: "Database Design",
+      icon: Database,
+      skills: ["Database Design", "MySQL", "MS SQL Server", "Query Optimization"],
       color: "text-purple-400"
     },
     {
-      title: "Monitoring & Observability",
-      icon: Monitor,
-      skills: ["Prometheus", "Grafana", "ELK Stack", "Datadog", "New Relic", "Jaeger"],
+      title: "Infrastructure & Systems",
+      icon: Server,
+      skills: ["Linux", "Infrastructure Optimization", "Deployment Automation"],
       color: "text-orange-400"
     },
     {
-      title: "Database & Storage",
-      icon: Database,
-      skills: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "MinIO", "S3"],
+      title: "Project Management",
+      icon: Network,
+      skills: ["JIRA", "QA", "Agile Methodologies", "Team Collaboration"],
       color: "text-red-400"
     },
     {
-      title: "Security & Compliance",
-      icon: Shield,
-      skills: ["Vault", "SAST/DAST", "OWASP", "SSL/TLS", "IAM", "Security Scanning"],
+      title: "Development Tools",
+      icon: Container,
+      skills: ["Livewire", "Custom System Development", "Multi-tenant Architecture"],
       color: "text-yellow-400"
-    },
-    {
-      title: "Programming & Scripting",
-      icon: Code,
-      skills: ["Python", "Bash", "Go", "YAML", "JSON", "PowerShell"],
-      color: "text-indigo-400"
     }
   ];
 
@@ -73,7 +67,7 @@ const SkillsSection = () => {
             Technical Skills
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive toolkit for modern infrastructure and operations
+            A comprehensive toolkit for backend development and DevOps practices
           </p>
         </div>
         

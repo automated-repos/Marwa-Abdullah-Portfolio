@@ -5,46 +5,61 @@ import { Building, Calendar, MapPin } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Senior DevOps Engineer",
-      company: "TechScale Solutions",
-      location: "San Francisco, CA",
-      period: "2022 - Present",
-      description: "Leading cloud infrastructure modernization initiatives for enterprise clients. Architecting scalable Kubernetes platforms and implementing advanced CI/CD pipelines.",
+      title: "DevOps Intern",
+      company: "DEPI",
+      location: "Alexandria, Egypt",
+      period: "Jun 2025 - Present",
+      description: "DevOps intern with hands-on experience in CI/CD, cloud automation, and scripting, eager to optimize infrastructure and deployments.",
       achievements: [
-        "Reduced deployment time by 80% through automated CI/CD pipelines",
-        "Managed $2M+ cloud infrastructure across AWS, Azure, and GCP",
-        "Led a team of 6 engineers in infrastructure transformation projects",
-        "Implemented zero-downtime deployment strategies for 100+ microservices"
+        "Gained practical experience in CI/CD pipeline development",
+        "Worked with cloud automation tools and scripting",
+        "Focused on infrastructure optimization strategies",
+        "Developed skills in deployment automation"
       ],
-      tech: ["Kubernetes", "AWS", "Terraform", "Jenkins", "Prometheus", "Docker"]
+      tech: ["CI/CD", "Cloud Automation", "Scripting", "Infrastructure", "DevOps Tools"]
     },
     {
-      title: "DevOps Engineer",
-      company: "CloudFirst Inc",
-      location: "Seattle, WA",
-      period: "2020 - 2022",
-      description: "Specialized in container orchestration and cloud migration projects. Built robust monitoring and alerting systems for high-traffic applications.",
+      title: "Career Break",
+      company: "Health & Professional Development",
+      location: "Alexandria, Egypt",
+      period: "Dec 2024 - Jun 2025",
+      description: "Took a planned break to focus on my health, followed by dedicated time to deepen my technical expertise and explore new opportunities.",
       achievements: [
-        "Migrated 50+ legacy applications to cloud-native architecture",
-        "Achieved 99.9% uptime for critical production systems",
-        "Reduced infrastructure costs by 35% through optimization",
-        "Established comprehensive monitoring covering 500+ services"
+        "Focused on personal health and well-being",
+        "Dedicated time to technical skill enhancement",
+        "Explored new career opportunities in DevOps",
+        "Prepared for transition into DevOps role"
       ],
-      tech: ["Docker", "Azure", "Ansible", "GitLab CI", "Grafana", "ELK Stack"]
+      tech: ["Self-Development", "Skill Enhancement", "Career Planning"]
     },
     {
-      title: "System Administrator",
-      company: "DataFlow Systems",
-      location: "Portland, OR",
-      period: "2019 - 2020",
-      description: "Managed on-premise and hybrid cloud infrastructure. Focused on automation, security hardening, and performance optimization.",
+      title: "Software Engineer (Backend - Laravel)",
+      company: "nWeave",
+      location: "Alexandria, Egypt",
+      period: "Feb 2023 - Dec 2024",
+      description: "Responsible for designing, developing, and maintaining the backend architecture of a multi-tenant healthcare web application. Built scalable APIs, optimized database structures, and implemented authentication systems.",
       achievements: [
-        "Automated 90% of routine operational tasks",
-        "Implemented backup and disaster recovery procedures",
-        "Reduced system downtime by 60% through proactive monitoring",
-        "Established security compliance across all systems"
+        "Designed and maintained multi-tenant healthcare application backend",
+        "Built scalable APIs for complex healthcare workflows",
+        "Optimized database structures for improved performance",
+        "Implemented robust authentication and authorization systems",
+        "Ensured seamless communication between central system and tenant databases"
       ],
-      tech: ["Linux", "VMware", "Bash", "Puppet", "Nagios", "MySQL"]
+      tech: ["Laravel", "PHP", "MySQL", "REST API", "Multi-tenant Architecture", "Database Design"]
+    },
+    {
+      title: "Laravel Developer (Freelance)",
+      company: "Logic",
+      location: "Cairo, Egypt",
+      period: "Feb 2024 - Aug 2024",
+      description: "Freelance Laravel Developer who built custom systems with Laravel + Livewire, handling everything from database design to frontend support.",
+      achievements: [
+        "Built custom systems using Laravel framework",
+        "Implemented Livewire for dynamic frontend interactions",
+        "Handled complete project lifecycle from DB design to frontend",
+        "Delivered robust solutions for various client requirements"
+      ],
+      tech: ["Laravel", "Livewire", "PHP", "Database Design", "Full-stack Development"]
     }
   ];
 

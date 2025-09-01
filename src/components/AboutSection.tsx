@@ -3,12 +3,12 @@ import { Badge } from "@/components/ui/badge";
 
 const AboutSection = () => {
   const highlights = [
-    "5+ years in DevOps and Infrastructure",
-    "Expert in AWS, Azure, and GCP",
-    "Kubernetes and Docker specialist",
-    "CI/CD pipeline architect",
-    "Infrastructure as Code advocate",
-    "Monitoring and observability expert"
+    "2+ years in Backend Development",
+    "PHP & Laravel specialist",
+    "DevOps intern with CI/CD experience",
+    "Multi-tenant architecture expert",
+    "Database design & optimization",
+    "REST API development"
   ];
 
   return (
@@ -19,23 +19,22 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Bridging the gap between development and operations with innovative solutions
+            Backend developer with DevOps skills, building scalable solutions
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-foreground leading-relaxed">
-              I'm a passionate DevOps engineer with over 5 years of experience in building, 
-              deploying, and maintaining scalable infrastructure. My journey began as a 
-              system administrator, and I've evolved into a cloud-native advocate who loves 
-              automating everything.
+              I'm a dedicated Software Engineer with over 2 years of experience in backend development,
+              specializing in PHP, MySQL, and Laravel. Currently expanding my expertise into DevOps 
+              practices, with hands-on experience in CI/CD, cloud automation, and infrastructure optimization.
             </p>
             
             <p className="text-lg text-foreground leading-relaxed">
-              I specialize in creating robust CI/CD pipelines, implementing Infrastructure 
-              as Code, and establishing comprehensive monitoring solutions. My goal is to 
-              enable development teams to ship faster while maintaining reliability and security.
+              I specialize in building scalable APIs, optimizing database structures, and implementing
+              robust authentication systems. I thrive in collaborative environments where I can share
+              insights and learn from others, continually pushing the boundaries of my skill set.
             </p>
             
             <div className="pt-4">
@@ -59,28 +58,28 @@ const AboutSection = () => {
               <div className="space-y-6">
                 <div className="text-center">
                   <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-4xl font-bold text-primary-foreground">
-                    AT
+                    MA
                   </div>
-                  <h3 className="text-2xl font-bold text-primary mb-2">Alex Thompson</h3>
-                  <p className="text-muted-foreground">Senior DevOps Engineer</p>
+                  <h3 className="text-2xl font-bold text-primary mb-2">Marwa Abdullah Elawady</h3>
+                  <p className="text-muted-foreground">Software Engineer & DevOps</p>
                 </div>
                 
                 <div className="space-y-4 text-sm">
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Location</span>
-                    <span className="text-foreground">San Francisco, CA</span>
+                    <span className="text-foreground">Alexandria, Egypt</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Experience</span>
-                    <span className="text-foreground">5+ Years</span>
+                    <span className="text-foreground">2+ Years</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Specialization</span>
-                    <span className="text-foreground">Cloud Infrastructure</span>
+                    <span className="text-foreground">Backend & DevOps</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-muted-foreground">Certifications</span>
-                    <span className="text-foreground">AWS, Azure, K8s</span>
+                    <span className="text-muted-foreground">Technologies</span>
+                    <span className="text-foreground">Laravel, PHP, CI/CD</span>
                   </div>
                 </div>
               </div>

@@ -13,7 +13,7 @@ const ContactSection = () => {
             Let's Connect
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to discuss your next infrastructure project or collaboration opportunity?
+            Ready to discuss your backend or DevOps needs? Let's build something amazing together.
           </p>
         </div>
         
@@ -31,7 +31,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">Email</h4>
-                      <p className="text-muted-foreground">alex.thompson@email.com</p>
+                      <p className="text-muted-foreground">workytip@gmail.com</p>
                     </div>
                   </div>
                   
@@ -41,7 +41,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">Phone</h4>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                      <p className="text-muted-foreground">+201099420890</p>
                     </div>
                   </div>
                   
@@ -51,7 +51,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">Location</h4>
-                      <p className="text-muted-foreground">San Francisco, CA</p>
+                      <p className="text-muted-foreground">Alexandria, Egypt</p>
                     </div>
                   </div>
                 </div>
@@ -77,12 +77,12 @@ const ContactSection = () => {
               <CardContent className="p-8">
                 <h3 className="text-xl font-bold text-primary mb-4">Services & Expertise</h3>
                 <div className="space-y-3 text-muted-foreground">
-                  <p>• Cloud Infrastructure Design & Implementation</p>
-                  <p>• CI/CD Pipeline Development & Optimization</p>
-                  <p>• Kubernetes & Container Orchestration</p>
-                  <p>• Infrastructure as Code (IaC) Solutions</p>
-                  <p>• Monitoring & Observability Setup</p>
-                  <p>• DevOps Consulting & Team Training</p>
+                  <p>• Backend Development (PHP, Laravel)</p>
+                  <p>• REST API Design & Development</p>
+                  <p>• Database Design & Optimization</p>
+                  <p>• Multi-tenant Architecture Solutions</p>
+                  <p>• CI/CD Pipeline Development</p>
+                  <p>• DevOps & Infrastructure Automation</p>
                 </div>
               </CardContent>
             </Card>

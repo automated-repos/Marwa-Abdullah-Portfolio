@@ -22,17 +22,17 @@ const HeroSection = () => {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="space-y-6">
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-            Alex Thompson
+            Marwa Abdullah Elawady
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-primary font-semibold">
-            DevOps Engineer
+            Software Engineer & DevOps
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Orchestrating seamless deployments and robust infrastructure. 
-            Passionate about automation, scalability, and delivering reliable solutions 
-            that empower development teams.
+            Backend development specialist with DevOps expertise. 
+            Passionate about building scalable APIs, optimizing infrastructure, 
+            and delivering robust solutions for complex applications.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
