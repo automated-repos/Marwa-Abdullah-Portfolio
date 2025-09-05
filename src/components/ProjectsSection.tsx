@@ -6,52 +6,68 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "Multi-Cloud Kubernetes Platform",
-      description: "Designed and implemented a unified Kubernetes platform spanning AWS, Azure, and GCP with automated failover, centralized monitoring, and cost optimization. Reduced infrastructure costs by 40% while improving reliability.",
-      tech: ["Kubernetes", "Terraform", "ArgoCD", "Prometheus", "Grafana", "AWS", "Azure", "GCP"],
-      highlights: ["99.9% uptime", "40% cost reduction", "Cross-cloud deployment"],
-      github: "#",
-      demo: "#"
+      title: "Inventory Management System",
+      description: "A comprehensive inventory management system built with modern web technologies. Features real-time stock tracking, automated reorder points, supplier management, and detailed reporting dashboard.",
+      tech: ["Laravel", "PHP", "MySQL", "Bootstrap", "JavaScript", "AJAX"],
+      highlights: ["Real-time tracking", "Automated alerts", "Supplier management"],
+      github: "https://github.com/workytip/Invetory-Management-System",
+      demo: "https://youtu.be/pvrV-g5BclI",
+      hasScreenshots: true
     },
     {
-      title: "AI-Powered CI/CD Pipeline",
-      description: "Built an intelligent CI/CD system using machine learning to predict build failures, optimize test execution order, and automatically rollback problematic deployments. Reduced build times by 60%.",
-      tech: ["Jenkins", "Python", "ML/AI", "Docker", "Kubernetes", "GitLab", "Monitoring"],
-      highlights: ["60% faster builds", "Predictive analytics", "Auto-rollback"],
-      github: "#",
-      demo: "#"
+      title: "Jumia Clone E-commerce Platform",
+      description: "A full-featured e-commerce platform inspired by Jumia. Includes product catalog, shopping cart, payment integration, order management, and admin dashboard with comprehensive product and user management.",
+      tech: ["Laravel", "PHP", "MySQL", "Vue.js", "Bootstrap", "PayPal API"],
+      highlights: ["Payment integration", "Admin dashboard", "Order tracking"],
+      github: "https://github.com/workytip/jumia-clone",
+      demo: "https://youtu.be/NcFsOzWdoyM",
+      hasScreenshots: true
     },
     {
-      title: "Infrastructure as Code Framework",
-      description: "Developed a comprehensive IaC framework with reusable modules, automated testing, and compliance checking. Standardized infrastructure deployment across 50+ microservices.",
-      tech: ["Terraform", "Ansible", "Python", "AWS", "Testing", "Compliance"],
-      highlights: ["50+ services", "100% automation", "Compliance ready"],
-      github: "#",
-      demo: "#"
+      title: "Social Media Content Scheduler",
+      description: "A full-stack content scheduling dashboard built with Laravel and React. The application allows users to create, queue, and manage posts for simulated social platforms. Demonstrates advanced backend handling with Laravel Queues and Job Scheduling for reliable, asynchronous post publishing.",
+      tech: ["Laravel", "React", "MySQL", "Queue Jobs", "Scheduling", "REST API"],
+      highlights: ["Queue management", "Automated posting", "Multi-platform"],
+      github: "https://github.com/workytip/content-scheduler",
+      demo: "https://youtu.be/pQ4zjder14k",
+      hasScreenshots: true
     },
     {
-      title: "Real-time Monitoring Dashboard",
-      description: "Created a unified monitoring solution aggregating metrics from multiple sources with custom alerting, SLA tracking, and automated incident response. Improved MTTR by 70%.",
-      tech: ["Prometheus", "Grafana", "ELK Stack", "Python", "Alerting", "SLA"],
-      highlights: ["70% faster MTTR", "Custom alerting", "SLA tracking"],
-      github: "#",
-      demo: "#"
+      title: "HR Management System",
+      description: "Complete human resources management solution featuring employee records, attendance tracking, payroll management, performance evaluations, and leave management. Built with focus on user experience and administrative efficiency.",
+      tech: ["Laravel", "PHP", "MySQL", "Bootstrap", "Chart.js", "PDF Reports"],
+      highlights: ["Employee tracking", "Payroll system", "Performance metrics"],
+      github: null,
+      demo: null,
+      hasScreenshots: true
     },
     {
-      title: "Zero-Downtime Deployment System",
-      description: "Implemented blue-green deployment strategy with automated health checks, traffic shifting, and instant rollback capabilities. Achieved zero-downtime deployments for critical services.",
-      tech: ["Kubernetes", "Istio", "ArgoCD", "Monitoring", "Load Balancing"],
-      highlights: ["Zero downtime", "Instant rollback", "Health monitoring"],
-      github: "#",
-      demo: "#"
+      title: "Multi-Tenant SaaS Application",
+      description: "Enterprise-grade multi-tenant application architecture with isolated data, custom domains, and tenant-specific configurations. Implements advanced Laravel tenancy patterns for scalable SaaS solutions.",
+      tech: ["Laravel", "Multi-tenancy", "MySQL", "Redis", "Queue Jobs", "Domain Routing"],
+      highlights: ["Data isolation", "Custom domains", "Scalable architecture"],
+      github: null,
+      demo: null,
+      hasScreenshots: false,
+      isPrivate: true
     },
     {
-      title: "Security Compliance Automation",
-      description: "Built automated security scanning and compliance reporting system integrated into CI/CD pipeline. Ensures all deployments meet security standards and regulatory requirements.",
-      tech: ["Security", "Compliance", "SAST/DAST", "Policy", "Automation"],
-      highlights: ["100% compliance", "Automated scanning", "Policy enforcement"],
-      github: "#",
-      demo: "#"
+      title: "DevOps Infrastructure Automation",
+      description: "Infrastructure automation project using Docker containerization and Ansible configuration management. Implements CI/CD pipelines, automated deployments, and server provisioning for scalable applications.",
+      tech: ["Docker", "Ansible", "Linux", "CI/CD", "Bash Scripting", "Infrastructure"],
+      highlights: ["Container orchestration", "Automated deployment", "Server provisioning"],
+      github: null,
+      demo: null,
+      isComingSoon: true
+    },
+    {
+      title: "Kubernetes Cluster Management",
+      description: "Advanced Kubernetes cluster setup and management project. Features automated scaling, monitoring, and deployment strategies for containerized applications in production environments.",
+      tech: ["Kubernetes", "Docker", "Monitoring", "Scaling", "DevOps", "Cloud"],
+      highlights: ["Auto-scaling", "Production ready", "Monitoring integration"],
+      github: null,
+      demo: null,
+      isComingSoon: true
     }
   ];
 
@@ -83,6 +99,27 @@ const ProjectsSection = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {project.description}
                 </p>
+
+                {/* Screenshot placeholder space */}
+                {project.hasScreenshots && (
+                  <div className="bg-muted/30 border-2 border-dashed border-primary/30 rounded-lg p-8 text-center">
+                    <p className="text-muted-foreground text-sm">Screenshots will be added here</p>
+                  </div>
+                )}
+
+                {/* YouTube Demo */}
+                {project.demo && project.demo.includes('youtu') && (
+                  <div className="aspect-video rounded-lg overflow-hidden">
+                    <iframe
+                      src={project.demo.replace('youtu.be/', 'www.youtube.com/embed/').replace('watch?v=', 'embed/')}
+                      title={`${project.title} Demo`}
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full"
+                    />
+                  </div>
+                )}
                 
                 <div className="space-y-3">
                   <div>
@@ -116,22 +153,48 @@ const ProjectsSection = () => {
                   </div>
                 </div>
                 
+                {/* Action Buttons */}
                 <div className="flex gap-2 pt-4">
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    className="flex-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                  >
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
-                  </Button>
-                  <Button 
-                    size="sm" 
-                    className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Demo
-                  </Button>
+                  {project.isComingSoon ? (
+                    <div className="flex-1 text-center py-2 px-4 bg-muted/50 rounded-md">
+                      <span className="text-muted-foreground text-sm font-medium">Coming Soon</span>
+                    </div>
+                  ) : project.isPrivate ? (
+                    <div className="flex-1 text-center py-2 px-4 bg-muted/50 rounded-md">
+                      <span className="text-muted-foreground text-sm font-medium">Private Repository</span>
+                    </div>
+                  ) : (
+                    <>
+                      {project.github ? (
+                        <Button 
+                          variant="outline" 
+                          size="sm" 
+                          className="flex-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                          onClick={() => window.open(project.github, '_blank')}
+                        >
+                          <Github className="h-4 w-4 mr-2" />
+                          Code
+                        </Button>
+                      ) : (
+                        <div className="flex-1" />
+                      )}
+                      
+                      {project.demo && !project.demo.includes('youtu') ? (
+                        <Button 
+                          size="sm" 
+                          className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground"
+                          onClick={() => window.open(project.demo, '_blank')}
+                        >
+                          <ExternalLink className="h-4 w-4 mr-2" />
+                          Demo
+                        </Button>
+                      ) : project.hasScreenshots && !project.demo ? (
+                        <div className="flex-1 text-center py-2 px-4 bg-muted/50 rounded-md">
+                          <span className="text-muted-foreground text-sm font-medium">Screenshots Only</span>
+                        </div>
+                      ) : null}
+                    </>
+                  )}
                 </div>
               </CardContent>
             </Card>
