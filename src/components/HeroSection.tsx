@@ -36,9 +36,11 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+           <a href="#projects">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8">
               View My Work
-            </Button>
+              </Button>
+            </a>
             <Button 
               variant="outline" 
               size="lg" 
@@ -50,15 +52,23 @@ const HeroSection = () => {
           </div>
           
           <div className="flex gap-6 justify-center pt-8">
-            <Button variant="ghost" size="icon" className="text-primary hover:text-primary-foreground hover:bg-primary rounded-full w-12 h-12">
-              <Github className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-primary hover:text-primary-foreground hover:bg-primary rounded-full w-12 h-12">
-              <Linkedin className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-primary hover:text-primary-foreground hover:bg-primary rounded-full w-12 h-12">
-              <Mail className="h-6 w-6" />
-            </Button>
+            <a href="https://github.com/workytip" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-primary hover:text-primary-foreground hover:bg-primary rounded-full w-12 h-12">
+                <Github className="h-6 w-6" />
+              </Button>
+            </a>
+
+            <a href="https://linkedin.com/in/marwa-abdullah-cs" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-primary hover:text-primary-foreground hover:bg-primary rounded-full w-12 h-12">
+                <Linkedin className="h-6 w-6" />
+              </Button>
+            </a>
+
+            <a href="mailto:workytip@gmail.com">
+              <Button variant="ghost" size="icon" className="text-primary hover:text-primary-foreground hover:bg-primary rounded-full w-12 h-12">
+                <Mail className="h-6 w-6" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>

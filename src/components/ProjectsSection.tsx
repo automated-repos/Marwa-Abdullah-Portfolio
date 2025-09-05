@@ -3,7 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
-import hrCover from "@/assets/hr-cover.jpg";
+import hrCover from "@/assets/hr-cover.png";
+import ansible from "@/assets/ansible.png";
 
 // IMS Screenshots imports (add these manually after copying images)
 import imsDashboard from "@/assets/ims/ims2.png";
@@ -119,11 +120,44 @@ const ProjectsSection = () => {
     }));
   };
   const projects = [
+   {
+      title: "Multi-Tenant SaaS Application",
+      description: "Healthcare Enterprise-grade multi-tenant application architecture with isolated data, custom domains, and tenant-specific configurations. Implements advanced Laravel tenancy patterns for scalable SaaS solutions.",
+      tech: ["Laravel","API","Oauth2",'Active Directory',, "Multi-tenancy", "MsSqlServer", "Queue Jobs", "Domain Routing"],
+      highlights: ["Data isolation", "Custom domains", "Scalable architecture"],
+      github: null,
+      demo: "https://revixir.com/",
+      hasScreenshots: true,
+      screenshots: [hrCover], 
+      isPrivate: true
+    },
+    {
+      title: "HR Assessment System",
+      description: "Developed a comprehensive HR assessment system that revolutionizes the hiring process through automation. The platform streamlines candidate evaluations, optimizes interview scheduling, and provides data-driven insights for better hiring decisions.",
+      tech: ["Laravel", "PHP", "MySQL","Livewire", "Bootstrap", "Chart.js", "PDF Reports"],
+      highlights: ["Multi-stage Assessments", "Excel Integration", "Performance metrics"],
+      github: null,
+      demo: null,
+      hasScreenshots: true,
+      screenshots: logicScreenshots,
+      // coverImage: hrCover
+    },
+    {
+      title: "DevOps Infrastructure Automation",
+      description: "Infrastructure automation project using Docker containerization and Ansible configuration management. Implements CI/CD pipelines, automated deployments, and server provisioning for scalable applications.",
+      tech: ["Docker", "Ansible", "Linux", "CI/CD", "Bash Scripting", "Infrastructure"],
+      highlights: ["Container orchestration", "Automated deployment", "Server provisioning"],
+      github: null,
+      demo: null,
+      isComingSoon: true,
+      hasScreenshots: true,
+      screenshots: [ansible]
+    },
     {
       title: "Inventory Management System",
-      description: "A comprehensive inventory management system built with modern web technologies. Features real-time stock tracking, automated reorder points, supplier management, and detailed reporting dashboard.",
-      tech: ["Laravel", "PHP", "MySQL", "Bootstrap", "JavaScript", "AJAX"],
-      highlights: ["Real-time tracking", "Automated alerts", "Supplier management"],
+      description: "Developed a comprehensive web-based Inventory Management System as the capstone project for NTI (National Telecommunication Institute). The system provides businesses with efficient tools for tracking inventory, managing suppliers, and monitoring sales operations.",
+      tech: ["Native PHP", "MySQL", "Bootstrap", "JavaScript", "AJAX"],
+      highlights: ["Stock Monitoring", "Sales Reporting", "Supplier management"],
       github: "https://github.com/workytip/Invetory-Management-System",
       demo: "https://youtu.be/pvrV-g5BclI",
       hasScreenshots: true,
@@ -131,13 +165,13 @@ const ProjectsSection = () => {
     },
     {
       title: "Jumia Clone E-commerce Platform",
-      description: "A full-featured e-commerce platform inspired by Jumia. Includes product catalog, shopping cart, payment integration, order management, and admin dashboard with comprehensive product and user management.",
-      tech: ["Laravel", "PHP", "MySQL", "Vue.js", "Bootstrap", "PayPal API"],
-      highlights: ["Payment integration", "Admin dashboard", "Order tracking"],
+      description: "A full-featured e-commerce platform inspired by Jumia. Includes product catalog, shopping cart, order management, and admin dashboard with comprehensive product and user management.",
+      tech: ["Laravel", "PHP", "MySQL", "Angular", "Bootstrap", "REST API" , "Google login"],
+      highlights: ["User Authentication","Shopping Cart","Advanced Search", "Admin dashboard", "Order tracking"],
       github: "https://github.com/workytip/jumia-clone",
       demo: "https://youtu.be/NcFsOzWdoyM",
       hasScreenshots: true,
-      screenshots: jumiaScreenshots // Add screenshots if available
+      screenshots: jumiaScreenshots 
     },
     {
       title: "Social Media Content Scheduler",
@@ -147,47 +181,20 @@ const ProjectsSection = () => {
       github: "https://github.com/workytip/content-scheduler",
       demo: "https://youtu.be/pQ4zjder14k",
       hasScreenshots: true,
-      screenshots: socialScreenshots // Add screenshots if available
+      screenshots: socialScreenshots 
     },
-    {
-      title: "HR Management System",
-      description: "Complete human resources management solution featuring employee records, attendance tracking, payroll management, performance evaluations, and leave management. Built with focus on user experience and administrative efficiency.",
-      tech: ["Laravel", "PHP", "MySQL", "Bootstrap", "Chart.js", "PDF Reports"],
-      highlights: ["Employee tracking", "Payroll system", "Performance metrics"],
-      github: null,
-      demo: null,
-      hasScreenshots: true,
-      screenshots: logicScreenshots,
-      coverImage: hrCover
-    },
-    {
-      title: "Multi-Tenant SaaS Application",
-      description: "Enterprise-grade multi-tenant application architecture with isolated data, custom domains, and tenant-specific configurations. Implements advanced Laravel tenancy patterns for scalable SaaS solutions.",
-      tech: ["Laravel", "Multi-tenancy", "MySQL", "Redis", "Queue Jobs", "Domain Routing"],
-      highlights: ["Data isolation", "Custom domains", "Scalable architecture"],
-      github: null,
-      demo: "https://revixir.com/",
-      hasScreenshots: false,
-      isPrivate: true
-    },
-    {
-      title: "DevOps Infrastructure Automation",
-      description: "Infrastructure automation project using Docker containerization and Ansible configuration management. Implements CI/CD pipelines, automated deployments, and server provisioning for scalable applications.",
-      tech: ["Docker", "Ansible", "Linux", "CI/CD", "Bash Scripting", "Infrastructure"],
-      highlights: ["Container orchestration", "Automated deployment", "Server provisioning"],
-      github: null,
-      demo: null,
-      isComingSoon: true
-    },
-    {
-      title: "Kubernetes Cluster Management",
-      description: "Advanced Kubernetes cluster setup and management project. Features automated scaling, monitoring, and deployment strategies for containerized applications in production environments.",
-      tech: ["Kubernetes", "Docker", "Monitoring", "Scaling", "DevOps", "Cloud"],
-      highlights: ["Auto-scaling", "Production ready", "Monitoring integration"],
-      github: null,
-      demo: null,
-      isComingSoon: true
-    }
+    
+   
+    
+    // {
+    //   title: "Kubernetes Cluster Management",
+    //   description: "Advanced Kubernetes cluster setup and management project. Features automated scaling, monitoring, and deployment strategies for containerized applications in production environments.",
+    //   tech: ["Kubernetes", "Docker", "Monitoring", "Scaling", "DevOps", "Cloud"],
+    //   highlights: ["Auto-scaling", "Production ready", "Monitoring integration"],
+    //   github: null,
+    //   demo: null,
+    //   isComingSoon: true
+    // }
   ];
 
   return (
@@ -198,7 +205,7 @@ const ProjectsSection = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real-world solutions that demonstrate expertise in modern DevOps practices
+            Real-world solutions that demonstrate expertise in Backend & modern DevOps practices
           </p>
         </div>
         
