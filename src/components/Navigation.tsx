@@ -39,7 +39,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            AT
+            Marwa A.
           </div>
 
           {/* Desktop Navigation */}

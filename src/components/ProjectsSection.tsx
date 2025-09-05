@@ -5,30 +5,103 @@ import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 // IMS Screenshots imports (add these manually after copying images)
-// import imsDashboard from "@/assets/ims-dashboard.png";
-// import imsProductsList from "@/assets/ims-products-list.png";
-// import imsProductsTable from "@/assets/ims-products-table.png";
-// import imsAccounts from "@/assets/ims-accounts.png";
-// import imsCategories from "@/assets/ims-categories.png";
-// import imsClients from "@/assets/ims-clients.png";
-// import imsInvoices from "@/assets/ims-invoices.png";
-// import imsSales from "@/assets/ims-sales.png";
-// import imsStock from "@/assets/ims-stock.png";
+import imsDashboard from "@/assets/ims/ims2.png";
+import imsProductsList from "@/assets/ims/ims3.png";
+import imsProductsTable from "@/assets/ims/ims4.png";
+import imsAccounts from "@/assets/ims/ims5.png";
+import imsCategories from "@/assets/ims/ims6.png";
+import imsClients from "@/assets/ims/ims7.png";
+import imsInvoices from "@/assets/ims/ims8.png";
+import imsSales from "@/assets/ims/ims9.png";
+import imsStock from "@/assets/ims/ims11.png";
+import screen12 from "@/assets/ims/ims12.png";
+import screen13 from "@/assets/ims/ims13.png";
+
+//jumia imports
+import jumia1 from "@/assets/jumia/jumia1.png";
+import jumia2 from "@/assets/jumia/jumia2.png";
+import jumia5 from "@/assets/jumia/jumia5.png";
+import jumia7 from "@/assets/jumia/jumia7.png";
+import jumia8 from "@/assets/jumia/jumia8.png";
+import jumia9 from "@/assets/jumia/jumia9.png";
+import jumia10 from "@/assets/jumia/jumia10.png";
+import jumia11 from "@/assets/jumia/jumia11.png";
+
+//social imports
+import social1 from "@/assets/social/cs1.png";
+import social2 from "@/assets/social/cs2.png";
+import social3 from "@/assets/social/cs3.png";
+import social4 from "@/assets/social/cs4.png";
+import social5 from "@/assets/social/cs5.png";
+import social6 from "@/assets/social/cs6.png";
+import social7 from "@/assets/social/cs7.png";
+import social8 from "@/assets/social/cs8.png";
+import social9 from "@/assets/social/cs9.png";
+import social10 from "@/assets/social/cs10.png";
+import social12 from "@/assets/social/cs12.png";
+import social13 from "@/assets/social/cs13.png";
+import social14 from "@/assets/social/cs14.png";
+
+import logic1 from "@/assets/logic/logic1.png";
+import logic2 from "@/assets/logic/logic2.png";
+import logic3 from "@/assets/logic/logic3.png";
+import logic4 from "@/assets/logic/logic4.png";
+import logic5 from "@/assets/logic/logic5.png";
+import logic6 from "@/assets/logic/logic5.png";
+
 
 const ProjectsSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState<{[key: number]: number}>({});
 
   // IMS Screenshots array (uncomment and populate after adding images)
   const imsScreenshots = [
-    // imsDashboard,
-    // imsProductsList,
-    // imsProductsTable,
-    // imsAccounts,
-    // imsCategories,
-    // imsClients,
-    // imsInvoices,
-    // imsSales,
-    // imsStock
+    imsDashboard,
+    imsProductsList,
+    imsProductsTable,
+    imsAccounts,
+    imsCategories,
+    imsClients,
+    imsInvoices,
+    imsSales,
+    imsStock,
+    screen12,
+    screen13
+  ];
+
+  const jumiaScreenshots = [
+    jumia1,
+    jumia2,
+    jumia5,
+    jumia7,
+    jumia8,
+    jumia9,
+    jumia10,
+    jumia11
+  ];
+
+  const socialScreenshots = [
+    social1,
+    social2,
+    social3,
+    social4,
+    social5,
+    social6,
+    social7,
+    social8,
+    social9,
+    social10,
+    social12,
+    social13,
+    social14
+  ];
+
+  const logicScreenshots = [
+    logic1,
+    logic2,
+    logic3,
+    logic4,
+    logic5,
+    logic6
   ];
 
   const nextImage = (projectIndex: number, screenshotsLength: number) => {
@@ -62,7 +135,8 @@ const ProjectsSection = () => {
       highlights: ["Payment integration", "Admin dashboard", "Order tracking"],
       github: "https://github.com/workytip/jumia-clone",
       demo: "https://youtu.be/NcFsOzWdoyM",
-      hasScreenshots: true
+      hasScreenshots: true,
+      screenshots: jumiaScreenshots // Add screenshots if available
     },
     {
       title: "Social Media Content Scheduler",
@@ -71,7 +145,8 @@ const ProjectsSection = () => {
       highlights: ["Queue management", "Automated posting", "Multi-platform"],
       github: "https://github.com/workytip/content-scheduler",
       demo: "https://youtu.be/pQ4zjder14k",
-      hasScreenshots: true
+      hasScreenshots: true,
+      screenshots: socialScreenshots // Add screenshots if available
     },
     {
       title: "HR Management System",
@@ -80,7 +155,8 @@ const ProjectsSection = () => {
       highlights: ["Employee tracking", "Payroll system", "Performance metrics"],
       github: null,
       demo: null,
-      hasScreenshots: true
+      hasScreenshots: true,
+      screenshots: logicScreenshots
     },
     {
       title: "Multi-Tenant SaaS Application",
