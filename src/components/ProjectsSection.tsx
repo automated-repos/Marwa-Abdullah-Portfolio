@@ -1,9 +1,49 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
+
+// IMS Screenshots imports (add these manually after copying images)
+// import imsDashboard from "@/assets/ims-dashboard.png";
+// import imsProductsList from "@/assets/ims-products-list.png";
+// import imsProductsTable from "@/assets/ims-products-table.png";
+// import imsAccounts from "@/assets/ims-accounts.png";
+// import imsCategories from "@/assets/ims-categories.png";
+// import imsClients from "@/assets/ims-clients.png";
+// import imsInvoices from "@/assets/ims-invoices.png";
+// import imsSales from "@/assets/ims-sales.png";
+// import imsStock from "@/assets/ims-stock.png";
 
 const ProjectsSection = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState<{[key: number]: number}>({});
+
+  // IMS Screenshots array (uncomment and populate after adding images)
+  const imsScreenshots = [
+    // imsDashboard,
+    // imsProductsList,
+    // imsProductsTable,
+    // imsAccounts,
+    // imsCategories,
+    // imsClients,
+    // imsInvoices,
+    // imsSales,
+    // imsStock
+  ];
+
+  const nextImage = (projectIndex: number, screenshotsLength: number) => {
+    setCurrentImageIndex(prev => ({
+      ...prev,
+      [projectIndex]: ((prev[projectIndex] || 0) + 1) % screenshotsLength
+    }));
+  };
+
+  const prevImage = (projectIndex: number, screenshotsLength: number) => {
+    setCurrentImageIndex(prev => ({
+      ...prev,
+      [projectIndex]: ((prev[projectIndex] || 0) - 1 + screenshotsLength) % screenshotsLength
+    }));
+  };
   const projects = [
     {
       title: "Inventory Management System",
@@ -12,7 +52,8 @@ const ProjectsSection = () => {
       highlights: ["Real-time tracking", "Automated alerts", "Supplier management"],
       github: "https://github.com/workytip/Invetory-Management-System",
       demo: "https://youtu.be/pvrV-g5BclI",
-      hasScreenshots: true
+      hasScreenshots: true,
+      screenshots: imsScreenshots
     },
     {
       title: "Jumia Clone E-commerce Platform",
@@ -100,12 +141,57 @@ const ProjectsSection = () => {
                   {project.description}
                 </p>
 
-                {/* Screenshot placeholder space */}
-                {project.hasScreenshots && (
-                  <div className="bg-muted/30 border-2 border-dashed border-primary/30 rounded-lg p-8 text-center">
-                    <p className="text-muted-foreground text-sm">Screenshots will be added here</p>
+                {/* Screenshot Gallery */}
+                {project.hasScreenshots && project.screenshots && project.screenshots.length > 0 ? (
+                  <div className="relative">
+                    <div className="aspect-video rounded-lg overflow-hidden bg-muted/30 border border-primary/20">
+                      <img 
+                        src={project.screenshots[currentImageIndex[index] || 0]}
+                        alt={`${project.title} Screenshot ${(currentImageIndex[index] || 0) + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    {project.screenshots.length > 1 && (
+                      <>
+                        <Button
+                          variant="outline"
+                          size="icon"
+                          className="absolute left-2 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm"
+                          onClick={() => prevImage(index, project.screenshots.length)}
+                        >
+                          <ChevronLeft className="h-4 w-4" />
+                        </Button>
+                        <Button
+                          variant="outline"
+                          size="icon"
+                          className="absolute right-2 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm"
+                          onClick={() => nextImage(index, project.screenshots.length)}
+                        >
+                          <ChevronRight className="h-4 w-4" />
+                        </Button>
+                        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
+                          {project.screenshots.map((_, i) => (
+                            <button
+                              key={i}
+                              className={`w-2 h-2 rounded-full transition-colors ${
+                                i === (currentImageIndex[index] || 0) 
+                                  ? 'bg-primary' 
+                                  : 'bg-muted-foreground/30'
+                              }`}
+                              onClick={() => setCurrentImageIndex(prev => ({ ...prev, [index]: i }))}
+                            />
+                          ))}
+                        </div>
+                      </>
+                    )}
                   </div>
-                )}
+                ) : project.hasScreenshots ? (
+                  <div className="bg-muted/30 border-2 border-dashed border-primary/30 rounded-lg p-8 text-center">
+                    <p className="text-muted-foreground text-sm">
+                      Screenshots placeholder - Add images to src/assets/ and uncomment imports
+                    </p>
+                  </div>
+                ) : null}
 
                 {/* YouTube Demo */}
                 {project.demo && project.demo.includes('youtu') && (
