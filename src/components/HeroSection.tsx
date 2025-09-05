@@ -39,7 +39,12 @@ const HeroSection = () => {
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8">
               View My Work
             </Button>
-            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8"
+              onClick={() => window.open('/cv.pdf', '_blank')}
+            >
               Download Resume
             </Button>
           </div>
