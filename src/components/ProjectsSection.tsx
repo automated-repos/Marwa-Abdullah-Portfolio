@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
+import hrCover from "@/assets/hr-cover.jpg";
 
 // IMS Screenshots imports (add these manually after copying images)
 import imsDashboard from "@/assets/ims/ims2.png";
@@ -156,7 +157,8 @@ const ProjectsSection = () => {
       github: null,
       demo: null,
       hasScreenshots: true,
-      screenshots: logicScreenshots
+      screenshots: logicScreenshots,
+      coverImage: hrCover
     },
     {
       title: "Multi-Tenant SaaS Application",
@@ -164,7 +166,7 @@ const ProjectsSection = () => {
       tech: ["Laravel", "Multi-tenancy", "MySQL", "Redis", "Queue Jobs", "Domain Routing"],
       highlights: ["Data isolation", "Custom domains", "Scalable architecture"],
       github: null,
-      demo: null,
+      demo: "https://revixir.com/",
       hasScreenshots: false,
       isPrivate: true
     },
