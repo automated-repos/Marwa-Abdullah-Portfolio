@@ -56,7 +56,7 @@ const Navigation = () => {
             <Button 
               size="sm" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
-              onClick={() => window.open('/cv.pdf', '_blank')}
+              onClick={() => window.open('https://automated-repos.github.io/Marwa-Abdullah-Portfolio/cv.pdf', '_blank')}
             >
               Resume
             </Button>
@@ -89,7 +89,7 @@ const Navigation = () => {
               <Button 
                 size="sm" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold w-fit"
-                onClick={() => window.open('/cv.pdf', '_blank')}
+                onClick={() => window.open('https://automated-repos.github.io/Marwa-Abdullah-Portfolio/cv.pdf', '_blank')}
               >
                 Resume
               </Button>

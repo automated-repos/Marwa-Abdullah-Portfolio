@@ -45,7 +45,7 @@ const HeroSection = () => {
               variant="outline" 
               size="lg" 
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8"
-              onClick={() => window.open('/cv.pdf', '_blank')}
+              onClick={() => window.open('https://automated-repos.github.io/Marwa-Abdullah-Portfolio/cv.pdf', '_blank')}
             >
               Download Resume
             </Button>
