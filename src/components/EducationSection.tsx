@@ -58,6 +58,33 @@ const EducationSection = () => {
               Professional Training & Internships
             </h3>
             
+            {/* NTI Cyber Security Scholarship */}
+            <Card className="border border-primary/20 hover:border-primary/30 transition-colors">
+              <CardHeader className="pb-3">
+                <div className="flex flex-col md:flex-row md:items-center gap-3">
+                  <div>
+                    <CardTitle className="text-lg text-foreground">Cyber Security Scholarship</CardTitle>
+                    <p className="text-primary font-medium">NTI - MCIT</p>
+                  </div>
+                  <div className="flex flex-wrap gap-2 md:ml-auto">
+                    <Badge variant="secondary" className="flex items-center gap-1">
+                      <Calendar className="h-3 w-3" />
+                      Aug 2024 - Sep 2025
+                    </Badge>
+                    <Badge variant="outline" className="flex items-center gap-1">
+                      <MapPin className="h-3 w-3" />
+                      Egypt
+                    </Badge>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent className="pt-0">
+                <p className="text-muted-foreground text-sm">
+                  Comprehensive cyber security program focusing on Security basics, VPN, OS security, F5 and Big IP, Trellix, and GCP security
+                </p>
+              </CardContent>
+            </Card>
+            
             {/* DEPI Internship */}
             <Card className="border border-primary/20 hover:border-primary/30 transition-colors">
               <CardHeader className="pb-3">
