@@ -4,11 +4,11 @@ import { Badge } from "@/components/ui/badge";
 const AboutSection = () => {
   const highlights = [
     "2+ years in Backend Development",
+    "Quality-focused mindset from testing experience", 
     "PHP & Laravel specialist",
-    "DevOps intern with CI/CD experience",
+    "DevOps expertise with CI/CD",
     "Multi-tenant architecture expert",
-    "Database design & optimization",
-    "REST API development"
+    "Resilient code practices"
   ];
 
   return (
@@ -16,25 +16,33 @@ const AboutSection = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-            About Me
+            How a Detour into Testing Made Me a More Mindful Developer
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Backend developer with DevOps skills, building scalable solutions
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            A journey from backend development through testing and back to development with deeper understanding
           </p>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-foreground leading-relaxed">
-              I'm a dedicated Software Engineer with over 2 years of experience in backend development,
-              specializing in PHP, MySQL, and Laravel. Currently expanding my expertise into DevOps 
-              practices, with hands-on experience in CI/CD, cloud automation, and infrastructure optimization.
+              Early in my career, I was deeply involved as a key contributor to a complex, multi-tenant backend project using PHP and Laravel. Just as we were heading to production, the company's focus shifted.
             </p>
             
             <p className="text-lg text-foreground leading-relaxed">
-              I specialize in building scalable APIs, optimizing database structures, and implementing
-              robust authentication systems. I thrive in collaborative environments where I can share
-              insights and learn from others, continually pushing the boundaries of my skill set.
+              I was asked to join the QA effort for a new project. Instead of seeing it as a setback, I embraced it. I discovered I had a knack for testing—for thinking of edge cases and potential flaws. For months, I helped ensure the new product was robust and reliable.
+            </p>
+            
+            <p className="text-lg text-foreground leading-relaxed">
+              But I missed building. So I made a decision: I would dedicate myself to returning to development, intentionally rebuilding my skills with a new perspective. I immersed myself in modern PHP, Laravel best practices, and, crucially, began studying DevOps to understand the entire software lifecycle.
+            </p>
+            
+            <p className="text-lg text-foreground leading-relaxed">
+              Today, I am a more well-rounded Software Engineer. My 2+ years of backend experience is now complemented by a tester's discipline for quality and a growing knowledge of CI/CD and automation. I don't just write code; I write resilient, well-considered code that stands up to scrutiny.
+            </p>
+            
+            <p className="text-lg text-primary font-semibold leading-relaxed">
+              My journey taught me that the best developers understand how software can fail.
             </p>
             
             <div className="pt-4">
