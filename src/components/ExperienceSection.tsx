@@ -5,32 +5,19 @@ import { Building, Calendar, MapPin } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "DevOps Intern",
-      company: "DEPI",
+      title: "Freelance Backend & DevOps Engineer",
+      company: "Freelance",
       location: "Alexandria, Egypt",
-      period: "Jun 2025 - Present",
-      description: "DevOps intern with hands-on experience in CI/CD, cloud automation, and scripting, eager to optimize infrastructure and deployments.",
+      period: "Jul 2025 - Present",
+      description: "Independent Backend and DevOps engineer providing end-to-end solutions for clients. Specializing in Laravel backend development, CI/CD implementation, and infrastructure automation.",
       achievements: [
-        "Gained practical experience in CI/CD pipeline development",
-        "Worked with cloud automation tools and scripting",
-        "Focused on infrastructure optimization strategies",
-        "Developed skills in deployment automation"
+        "Delivered custom backend solutions using Laravel and PHP",
+        "Implemented CI/CD pipelines for automated deployments",
+        "Optimized infrastructure and deployment processes",
+        "Provided DevOps consulting and automation solutions",
+        "Maintained high-quality code standards and testing practices"
       ],
-      tech: ["CI/CD", "Cloud Automation", "Scripting", "Infrastructure", "DevOps Tools"]
-    },
-    {
-      title: "Career Break",
-      company: "Health & Professional Development",
-      location: "Alexandria, Egypt",
-      period: "Dec 2024 - Jun 2025",
-      description: "Took a planned break to focus on my health, followed by dedicated time to deepen my technical expertise and explore new opportunities.",
-      achievements: [
-        "Focused on personal health and well-being",
-        "Dedicated time to technical skill enhancement",
-        "Explored new career opportunities in DevOps",
-        "Prepared for transition into DevOps role"
-      ],
-      tech: ["Self-Development", "Skill Enhancement", "Career Planning"]
+      tech: ["Laravel", "PHP", "DevOps", "CI/CD", "Infrastructure Automation", "Backend Development"]
     },
     {
       title: "Software Engineer (Backend - Laravel)",
