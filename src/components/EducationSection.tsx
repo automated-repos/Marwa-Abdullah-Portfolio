@@ -69,7 +69,7 @@ const EducationSection = () => {
                   <div className="flex flex-wrap gap-2 md:ml-auto">
                     <Badge variant="secondary" className="flex items-center gap-1">
                       <Calendar className="h-3 w-3" />
-                      Aug 2024 - Sep 2025
+                      Aug 2025 - Sep 2025
                     </Badge>
                     <Badge variant="outline" className="flex items-center gap-1">
                       <MapPin className="h-3 w-3" />
