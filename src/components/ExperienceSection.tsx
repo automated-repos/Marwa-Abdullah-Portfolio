@@ -6,18 +6,18 @@ const ExperienceSection = () => {
   const experiences = [
     {
       title: "Freelance Backend & DevOps Engineer",
-      company: "Freelance",
+      company: "Independent Consultancy",
       location: "Alexandria, Egypt",
       period: "Sep 2025 - Present",
-      description: "Independent Backend and DevOps engineer actively seeking clients and preparing proposals for Laravel backend development, CI/CD implementation, and infrastructure automation services.",
+      description: "Establishing independent consultancy specializing in quality-first Laravel development and DevOps automation. Building resilient backend systems with a tester's mindset for failure prevention.",
       achievements: [
-        "Developing comprehensive service offerings for backend development",
-        "Creating detailed proposals for CI/CD and DevOps solutions",
-        "Building portfolio of Laravel and PHP expertise",
-        "Establishing professional network and client relationships",
-        "Preparing technical documentation and project estimates"
+        "Developing comprehensive backend solutions with quality-first approach",
+        "Creating robust CI/CD strategies for automated deployments",
+        "Building consultancy focused on resilient system architecture",
+        "Establishing expertise in failure-resistant Laravel applications",
+        "Preparing technical solutions that anticipate real-world challenges"
       ],
-      tech: ["Laravel", "PHP", "DevOps", "CI/CD", "Business Development", "Proposal Writing"]
+      tech: ["Laravel", "PHP", "DevOps", "CI/CD", "Quality Engineering", "System Architecture"]
     },
     {
       title: "Software Engineer (Backend - Laravel)",

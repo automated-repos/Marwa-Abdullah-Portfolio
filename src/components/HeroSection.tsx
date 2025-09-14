@@ -26,13 +26,12 @@ const HeroSection = () => {
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-primary font-semibold">
-            Software Engineer & DevOps
+            Backend Developer with a Tester's Eye for Quality
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Backend development specialist with DevOps expertise. 
-            Passionate about building scalable APIs, optimizing infrastructure, 
-            and delivering robust solutions for complex applications.
+            Laravel expert who thinks like a QA engineer. Building resilient backend systems 
+            that anticipate failure and deliver robust solutions for complex applications.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">

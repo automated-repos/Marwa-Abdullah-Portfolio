@@ -18,11 +18,14 @@ const AboutSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
             About Me
           </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            From Testing Back to Development - A Journey of Quality-First Engineering
+          </p>
         </div>
         
         <div className="max-w-5xl mx-auto">
           <h3 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
-            How a Detour into Testing Made Me a More Mindful Developer
+            What if every developer wrote code thinking like a tester first?
           </h3>
           <div className="grid lg:grid-cols-3 gap-12 items-start">
             <div className="lg:col-span-2 space-y-6">
@@ -39,11 +42,11 @@ const AboutSection = () => {
               </p>
               
               <p className="text-lg text-foreground leading-relaxed">
-                Today, I am a more well-rounded Software Engineer. My 2+ years of backend experience is now complemented by a tester's discipline for quality and a growing knowledge of CI/CD and automation. I don't just write code; I write resilient, well-considered code that stands up to scrutiny.
+                Today, I am a more well-rounded Software Engineer. My 2+ years of backend experience is now complemented by a tester's discipline for quality and a growing knowledge of CI/CD and automation. I don't just build features - I build resilient systems that anticipate failure and stand up to real-world challenges.
               </p>
               
               <p className="text-lg text-primary font-semibold leading-relaxed">
-                My journey taught me that the best developers understand how software can fail.
+                My journey taught me that the best developers understand how software can fail - and I'm ready to build software that stands up to scrutiny for your next project.
               </p>
               
               <div className="pt-6">
