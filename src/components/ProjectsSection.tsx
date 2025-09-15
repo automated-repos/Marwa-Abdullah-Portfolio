@@ -122,11 +122,11 @@ const ProjectsSection = () => {
   const projects = [
    {
       title: "Multi-Tenant SaaS Application",
-      description: "Healthcare Enterprise-grade multi-tenant application architecture with isolated data, custom domains, and tenant-specific configurations. Implements advanced Laravel tenancy patterns for scalable SaaS solutions.",
+      description: "Developed a secure multi-tenant SaaS solution for healthcare, guaranteeing HIPAA compliance and data isolation. Implemented custom domains and tenant-specific configurations using modern Laravel architecture",
       tech: ["Laravel","API","Oauth2",'Active Directory',, "Multi-tenancy", "MsSqlServer", "Queue Jobs", "Domain Routing"],
       highlights: ["Data isolation", "Custom domains", "Scalable architecture"],
       github: null,
-      demo: "https://revixir.com/",
+      demo: "",
       hasScreenshots: true,
       screenshots: [hrCover], 
       isPrivate: true
