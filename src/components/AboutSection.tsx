@@ -19,7 +19,7 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From Testing Back to Development - A Journey of Quality-First Engineering
+            Software Engineer with a QA Lens: Building Resilience from Code to Deployment
           </p>
         </div>
         
@@ -34,21 +34,23 @@ const AboutSection = () => {
               </p>
               
               <p className="text-lg text-foreground leading-relaxed">
-                I was asked to join the QA effort for a new project. Instead of seeing it as a setback, I embraced it. I discovered I had a knack for testing—for thinking of edge cases and potential flaws. For months, I helped ensure the new product was robust and reliable.
+                I was asked to join the QA effort for a new project. Instead of seeing it as a setback, I embraced it. I discovered I had a talent for testing—for thinking of edge cases and potential flaws. For months, I helped ensure the new product was robust and reliable.
               </p>
               
               <p className="text-lg text-foreground leading-relaxed">
-                But I missed building. So I made a decision: I would dedicate myself to returning to development, intentionally rebuilding my skills with a new perspective. I immersed myself in modern PHP, Laravel best practices, and, crucially, began studying DevOps to understand the entire software lifecycle.
+                But I missed building. So I made a decision: I would dedicate myself to returning to development, intentionally rebuilding my skills with a new perspective. I immersed myself in modern PHP, Laravel best practices, and, most crucially, began mastering DevOps principles to understand the entire software lifecycle.
               </p>
               
               <p className="text-lg text-foreground leading-relaxed">
-                Today, I am a more well-rounded Software Engineer. My 2+ years of backend experience is now complemented by a tester's discipline for quality and a growing knowledge of CI/CD and automation. I don't just build features - I build resilient systems that anticipate failure and stand up to real-world challenges.
+                Today, I am a more well-rounded Software Engineer. My 2+ years of backend experience is now complemented by a tester's discipline for quality and a growing knowledge of CI/CD and automation. I don't just build features, I build resilient systems that anticipate failure and stand up to real-world challenges.
               </p>
               
               <p className="text-lg text-primary font-semibold leading-relaxed">
-                My journey taught me that the best developers understand how software can fail - and I'm ready to build software that stands up to scrutiny for your next project.
+                My journey taught me that quality isn't just found in testing—it's built through automation and sound infrastructure. Now, I'm channeling that mindset into DevOps: mastering tools like Docker, AWS, and CI/CD pipelines to not just anticipate failure, but to engineer systems that are inherently resilient, scalable, and reliable from the ground up.
               </p>
-              
+              <p className="text-lg text-primary font-semibold leading-relaxed">
+                I'm ready to apply this unique blend of development experience and operational thinking to your next project.
+              </p>
               <div className="pt-6">
                 <h4 className="text-xl font-semibold mb-4 text-primary">Key Expertise</h4>
                 <div className="flex flex-wrap gap-2">
@@ -66,14 +68,15 @@ const AboutSection = () => {
             </div>
             
             <Card className="bg-card border-primary/20 shadow-card-shadow lg:sticky lg:top-8">
-              <CardContent className="p-6">
+
+              <CardContent className="p-4">
                 <div className="space-y-6">
                   <div className="text-center">
                     <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-3xl font-bold text-primary-foreground">
                       MA
                     </div>
                     <h4 className="text-xl font-bold text-primary mb-2">Marwa Abdullah Elawady</h4>
-                    <p className="text-muted-foreground text-sm">Software Engineer & DevOps</p>
+                    <p className="text-muted-foreground text-sm">Backend Engineer & DevOps Enthusiast</p>
                   </div>
                   
                   <div className="space-y-3 text-sm">
@@ -91,8 +94,16 @@ const AboutSection = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Technologies</span>
-                      <span className="text-foreground">Laravel, PHP, CI/CD</span>
+                      
+                      <span className="text-foreground"> PHP, Laravel, Docker,CI/CD</span>
                     </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Status</span>
+                      <span className="text-foreground">  Open to Remote & Freelance </span>
+                    </div>
+
+                      
+
                   </div>
                 </div>
               </CardContent>

@@ -21,17 +21,18 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="space-y-6">
+          <br/><br/>
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
             Marwa Abdullah Elawady
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-primary font-semibold">
-            Backend Developer with a Tester's Eye for Quality
+           Backend Engineer | From Quality Assurance Insight to DevOps Execution
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Laravel expert who thinks like a QA engineer. Building resilient backend systems 
-            that anticipate failure and deliver robust solutions for complex applications.
+        Leveraging a unique perspective from quality assurance to develop and automate resilient Laravel systems that deliver consistent value and a reliable user experience. 
+
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
