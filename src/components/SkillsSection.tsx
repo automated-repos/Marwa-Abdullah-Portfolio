@@ -10,54 +10,61 @@ import {
   Shield,
   Code,
   Cpu,
-  Network
+  Network,
+  TrendingUp
 } from "lucide-react";
 
 const SkillsSection = () => {
-  const skillCategories = [
-    {
-      title: "Backend Development",
-      icon: Code,
-      skills: ["PHP", "Laravel", "REST API", "OOP", "MySQL", "MS SQL Server"],
-      color: "text-blue-400"
-    },
-    {
-      title: "Frontend Technologies",
-      icon: Monitor,
-      skills: ["HTML", "CSS", "JavaScript", "ES6", "Angular", "ReactJs", "Bootstrap"],
-      color: "text-cyan-400"
-    },
-    {
-      title: "DevOps & CI/CD",
-      icon: GitBranch,
-      skills: ["Git", "GitHub", "Bitbucket", "CI/CD", "Cloud Automation", "Scripting"],
-      color: "text-green-400"
-    },
-    {
-      title: "Database Design",
-      icon: Database,
-      skills: ["Database Design", "MySQL", "MS SQL Server", "Query Optimization"],
-      color: "text-purple-400"
-    },
-    {
-      title: "Infrastructure & Systems",
-      icon: Server,
-      skills: ["Linux", "Infrastructure Optimization", "Deployment Automation"],
-      color: "text-orange-400"
-    },
-    {
-      title: "Project Management",
-      icon: Network,
-      skills: ["JIRA", "QA", "Agile Methodologies", "Team Collaboration"],
-      color: "text-red-400"
-    },
-    {
-      title: "Development Tools",
-      icon: Container,
-      skills: ["Livewire", "Custom System Development", "Multi-tenant Architecture"],
-      color: "text-yellow-400"
-    }
-  ];
+    const skillCategories = [
+      {
+        title: "Backend Development",
+        icon: Code,
+        skills: ["PHP", "Laravel", "REST API", "OOP", "System Architecture"],
+        color: "text-blue-400"
+      },
+      {
+        title: "Frontend Proficiency",
+        icon: Monitor,
+        skills: ["HTML", "CSS", "JavaScript","Bootstrap", "ReactJs","Angular" ],
+        color: "text-cyan-400"
+      },
+      {
+        title: "DevOps & CI/CD",
+        icon: GitBranch,
+        skills: ["Git", "GitHub Actions", "CI/CD Pipelines", "Docker","Ansible", "Bash Scripting"],
+        color: "text-green-400"
+      },
+      {
+        title: "Database Design & Management",
+        icon: Database,
+        skills: ["Database Design", "MySQL", "MS SQL Server", "Query Optimization"],
+        color: "text-purple-400"
+      },
+      {
+        title: "Infrastructure & Deployment",
+        icon: Server,
+        skills: ["Linux", "Nginx/Apache", "Deployment Automation", "Performance Tuning"],
+        color: "text-orange-400"
+      },
+      {
+        title: "Development Practices",
+        icon: Network,
+        skills: ["QA Processes","JIRA", "Agile/Scrum", "Team Collaboration"],
+        color: "text-red-400"
+      },
+      {
+        title: "Laravel Ecosystem",
+        icon: Container,
+        skills: ["Livewire", "Multi-tenant Architecture", "Eloquent ORM", "Artisan"],
+        color: "text-yellow-400"
+      },
+      {
+        title: "Currently Mastering",
+        icon: TrendingUp, 
+        skills: ["Kubernetes", "Terraform", "AWS", "Jenkins", "Prometheus", "GCP"],
+        color: "text-pink-400" // or "text-gray-400" to subtly differentiate it
+      }
+    ];
 
   return (
     <section id="skills" className="py-20 px-6 bg-section-gradient">
@@ -103,7 +110,13 @@ const SkillsSection = () => {
           <Card className="bg-card border-primary/20 shadow-card-shadow max-w-4xl mx-auto">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-primary mb-6">Core Philosophy</h3>
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"> {/* Changed to 4 cols */}
+                <div className="text-center">
+                  <Shield className="h-12 w-12 text-primary mx-auto mb-4" /> 
+                  {/* Alternatively, use an icon like <CheckCircle /> for Quality */}
+                  <h4 className="text-lg font-semibold mb-2">Quality First</h4>
+                  <p className="text-muted-foreground">Building reliability into every layer of the application, from code to deployment</p>
+                </div>
                 <div className="text-center">
                   <Cpu className="h-12 w-12 text-primary mx-auto mb-4" />
                   <h4 className="text-lg font-semibold mb-2">Automation First</h4>
