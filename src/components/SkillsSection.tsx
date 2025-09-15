@@ -11,7 +11,8 @@ import {
   Code,
   Cpu,
   Network,
-  TrendingUp
+  TrendingUp,
+  CheckCircle
 } from "lucide-react";
 
 const SkillsSection = () => {
@@ -110,10 +111,9 @@ const SkillsSection = () => {
           <Card className="bg-card border-primary/20 shadow-card-shadow max-w-4xl mx-auto">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold text-primary mb-6">Core Philosophy</h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"> {/* Changed to 4 cols */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"> 
                 <div className="text-center">
-                  <Shield className="h-12 w-12 text-primary mx-auto mb-4" /> 
-                  {/* Alternatively, use an icon like <CheckCircle /> for Quality */}
+                  <CheckCircle className="h-12 w-12 text-primary mx-auto mb-4" /> 
                   <h4 className="text-lg font-semibold mb-2">Quality First</h4>
                   <p className="text-muted-foreground">Building reliability into every layer of the application, from code to deployment</p>
                 </div>
