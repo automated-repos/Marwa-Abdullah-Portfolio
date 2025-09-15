@@ -20,19 +20,21 @@ const ExperienceSection = () => {
       tech: ["Laravel", "PHP", "DevOps", "CI/CD", "Quality Engineering", "System Architecture"]
     },
     {
-      title: "Software Engineer (Backend - Laravel)",
+      title: "Software Engineer & QA Engineer",
       company: "nWeave",
       location: "Alexandria, Egypt",
       period: "Feb 2023 - Dec 2024",
-      description: "Responsible for designing, developing, and maintaining the backend architecture of a multi-tenant healthcare web application. Built scalable APIs, optimized database structures, and implemented authentication systems.",
+      description: "Responsible for designing, developing, and maintaining the backend architecture of a multi-tenant healthcare web application. Additionally served as QA Engineer (May 2024 - Oct 2024), bringing quality assurance expertise to development processes.",
       achievements: [
         "Designed and maintained multi-tenant healthcare application backend",
         "Built scalable APIs for complex healthcare workflows",
+        "Implemented comprehensive QA processes and testing strategies (May-Oct 2024)",
         "Optimized database structures for improved performance",
+        "Established quality gates and testing protocols for healthcare compliance",
         "Implemented robust authentication and authorization systems",
         "Ensured seamless communication between central system and tenant databases"
       ],
-      tech: ["Laravel", "PHP", "MySQL", "REST API", "Multi-tenant Architecture", "Database Design"]
+      tech: ["Laravel", "PHP", "MySQL", "REST API", "Multi-tenant Architecture", "Database Design", "QA Testing", "Test Strategy", "Quality Assurance"]
     },
     {
       title: "Laravel Developer (Freelance)",
