@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
-import hrCover from "@/assets/hr-cover.png";
+import hrCover from "@/assets/hr-cover.jpg";
 import ansible from "@/assets/ansible.png";
 
 // IMS Screenshots imports (add these manually after copying images)
