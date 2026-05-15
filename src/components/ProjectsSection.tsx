@@ -160,7 +160,7 @@ const projects: Project[] = [
     tech: ["React", "UI/UX Design", "Product Design", "Frontend"],
     highlights: ["Quran memorization tracker", "Daily routine planner", "Pomodoro focus sessions"],
     github: "https://github.com/workytip/hafezon",
-    demo: "https://workytip.github.io/hafezon/",
+    demo: "https://app.hafezon.site/",
     screenshots: [hafezon1, hafezon2, hafezon3, hafezon4, hafezon5, hafezon6, hafezon7],
     category: "Product",
   },
