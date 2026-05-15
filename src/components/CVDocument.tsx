@@ -123,18 +123,22 @@ const s = StyleSheet.create({
     flexWrap: 'wrap',
     marginTop: 1,
   },
-  tag: {
-    fontSize: 7.5,
+  tagWrapper: {
     backgroundColor: C.bg,
     paddingHorizontal: 4,
-    paddingVertical: 1.5,
+    paddingVertical: 2,
     marginRight: 3,
     marginBottom: 1,
     borderRadius: 2,
     borderWidth: 0.5,
     borderColor: C.border,
     borderStyle: 'solid',
+    justifyContent: 'center',
+  },
+  tag: {
+    fontSize: 7.5,
     color: C.sub,
+    lineHeight: 1,
   },
   // Skills grid
   skillsGrid: {
@@ -188,7 +192,9 @@ const Bullet = ({ text }: { text: string }) => (
 const Tags = ({ items }: { items: string[] }) => (
   <View style={s.techRow}>
     {items.map((t, i) => (
-      <Text key={i} style={s.tag}>{t}</Text>
+      <View key={i} style={s.tagWrapper}>
+        <Text style={s.tag}>{t}</Text>
+      </View>
     ))}
   </View>
 );
