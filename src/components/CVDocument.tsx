@@ -14,7 +14,7 @@ const s = StyleSheet.create({
     fontFamily: 'Helvetica',
     fontSize: 9.5,
     paddingTop: 34,
-    paddingBottom: 26,
+    paddingBottom: 18,
     paddingHorizontal: 44,
     color: C.text,
     lineHeight: 1.45,
@@ -51,7 +51,7 @@ const s = StyleSheet.create({
   },
   // Section
   section: {
-    marginBottom: 9,
+    marginBottom: 7,
   },
   sectionTitle: {
     fontFamily: 'Helvetica-Bold',
@@ -370,7 +370,7 @@ export const CVDocument = () => (
         <SecTitle>Education &amp; Training</SecTitle>
 
         {/* Formal Education */}
-        <View style={s.entry}>
+        <View style={{ ...s.entry, marginBottom: 4 }}>
           <View style={s.topRow}>
             <Text style={s.entryTitle}>Bachelor of Computers and Information Technology, Computer Science</Text>
             <Text style={s.entryPeriod}>Sep 2013 – Jan 2019</Text>
@@ -379,7 +379,7 @@ export const CVDocument = () => (
         </View>
 
         {/* Training & Certifications */}
-        <Text style={{ fontSize: 8, fontFamily: 'Helvetica-Bold', color: C.muted, letterSpacing: 0.6, textTransform: 'uppercase', marginBottom: 4 }}>Training &amp; Certifications</Text>
+        <Text style={{ fontSize: 8, fontFamily: 'Helvetica-Bold', color: C.muted, letterSpacing: 0.6, textTransform: 'uppercase', marginBottom: 2 }}>Training &amp; Certifications</Text>
 
         <View style={s.entrySmall}>
           <View style={s.topRow}>
