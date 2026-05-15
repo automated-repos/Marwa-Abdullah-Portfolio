@@ -1,7 +1,7 @@
 import { Document, Page, Text, View, StyleSheet, Link } from '@react-pdf/renderer';
 
 const C = {
-  accent: '#10b981',
+  accent: '#0ea5e9',
   text: '#111827',
   sub: '#374151',
   muted: '#6b7280',
@@ -322,7 +322,7 @@ export const CVDocument = () => (
             <Text style={s.entryTitle}>Bareeq: Jewelry Store Management SaaS</Text>
             <Text style={s.entryPeriod}>Oct 2025 – Present</Text>
           </View>
-          <Link src="https://bareeq.merspire.com" style={s.entrySubtitle}>Live: bareeq.merspire.com</Link>
+          <Link src="https://bareeq.merspire.com" style={s.entrySubtitle}>Visit Site</Link>
           <Text style={s.entryDesc}>
             Production multi-tenant SaaS for jewelry retailers: QR-based POS, real-time inventory, supplier management, customer CRM, multi-branch treasury tracking, and analytics dashboards. Currently integrating IoT/NFC for fast, hands-free stocktaking.
           </Text>
@@ -359,7 +359,7 @@ export const CVDocument = () => (
           <Text style={s.entryDesc}>
             Full-stack scheduling dashboard using Laravel Queues and Job Scheduling for reliable async post publishing, with a React frontend.
           </Text>
-          <Link src="https://github.com/workytip/content-scheduler" style={s.entrySubtitle}>github.com/workytip/content-scheduler</Link>
+          <Link src="https://github.com/workytip/content-scheduler" style={s.entrySubtitle}>GitHub</Link>
           <Tags items={['Laravel', 'React', 'MySQL', 'Queue Jobs', 'REST API']} />
         </View>
       </View>
