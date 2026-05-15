@@ -207,7 +207,7 @@ export const CVDocument = () => (
         <Text style={s.jobTitle}>Software Engineer  ·  Backend Engineer  ·  Laravel Specialist</Text>
         <View style={s.contactRow}>
           <Link src="mailto:marwa.a.elawady@gmail.com" style={s.contactItem}>Email</Link>
-          <Text style={s.contactItem}>+201099420890</Text>
+          <Link src="https://wa.me/201099420890" style={s.contactItem}>+201099420890</Link>
           <Text style={s.contactItem}>Alexandria, Egypt</Text>
           <Link src="https://github.com/workytip" style={s.contactItem}>GitHub</Link>
           <Link src="https://linkedin.com/in/marwa-abdullah-cs" style={s.contactItem}>LinkedIn</Link>
