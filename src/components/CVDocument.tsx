@@ -369,13 +369,17 @@ export const CVDocument = () => (
       <View style={s.section}>
         <SecTitle>Education &amp; Training</SecTitle>
 
-        <View style={s.entrySmall}>
+        {/* Formal Education */}
+        <View style={s.entry}>
           <View style={s.topRow}>
             <Text style={s.entryTitle}>Bachelor of Computers and Information Technology, Computer Science</Text>
             <Text style={s.entryPeriod}>Sep 2013 – Jan 2019</Text>
           </View>
           <Text style={s.entrySubtitle}>Assiut University (AUN) · Assiut, Egypt</Text>
         </View>
+
+        {/* Training & Certifications */}
+        <Text style={{ fontSize: 8, fontFamily: 'Helvetica-Bold', color: C.muted, letterSpacing: 0.6, textTransform: 'uppercase', marginBottom: 4 }}>Training &amp; Certifications</Text>
 
         <View style={s.entrySmall}>
           <View style={s.topRow}>
@@ -399,6 +403,14 @@ export const CVDocument = () => (
             <Text style={s.entryPeriod}>Aug 2022 – Nov 2022</Text>
           </View>
           <Text style={s.entrySubtitle}>ITI-MCIT · Alexandria, Egypt · 4 Months</Text>
+        </View>
+
+        <View style={s.entrySmall}>
+          <View style={s.topRow}>
+            <Text style={s.entryTitle}>Web Development Diploma: PHP &amp; MySQL</Text>
+            <Text style={s.entryPeriod}>2021</Text>
+          </View>
+          <Text style={s.entrySubtitle}>NTI · Egypt</Text>
         </View>
 
         <View style={s.entrySmall}>
