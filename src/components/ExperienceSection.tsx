@@ -42,7 +42,7 @@ const ExperienceSection = () => {
       company: "Logic",
       location: "Cairo, Egypt",
       period: "Feb 2024 - Aug 2024",
-      description: "Freelance engagement (concurrent with nWeave role). Built a custom HR Assessment System from scratch using Laravel and Livewire, handling the full project lifecycle from database design to frontend delivery.",
+      description: "Freelance engagement. Built a custom HR Assessment System from scratch using Laravel and Livewire, handling the full project lifecycle from database design to frontend delivery.",
       achievements: [
         "Designed and built a modular HR assessment platform automating candidate evaluation and interview scheduling",
         "Implemented multi-stage assessment workflows with configurable scoring and evaluator assignment",

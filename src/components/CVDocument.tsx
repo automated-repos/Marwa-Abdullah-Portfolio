@@ -270,7 +270,7 @@ export const CVDocument = () => (
             <Text style={s.entryTitle}>Laravel Developer, Freelance</Text>
             <Text style={s.entryPeriod}>Feb 2024 – Aug 2024</Text>
           </View>
-          <Text style={s.entrySubtitle}>Logic · Cairo, Egypt  (concurrent with nWeave)</Text>
+          <Text style={s.entrySubtitle}>Logic · Cairo, Egypt</Text>
           <Bullet text="Built a custom HR Assessment System using Laravel + Livewire, from database design to frontend delivery" />
           <Bullet text="Designed multi-stage assessment workflows with configurable scoring, bulk Excel import, and dynamic scheduling matrix" />
           <Bullet text="Delivered Chart.js analytics dashboard and automated PDF report generation for hiring decisions" />
@@ -334,6 +334,7 @@ export const CVDocument = () => (
             <Text style={s.entryTitle}>Multi-Tenant Healthcare SaaS (AHS-nWeave)</Text>
             <Text style={s.entryPeriod}>2023 – 2024</Text>
           </View>
+          <Link src="https://revixir.com" style={s.entrySubtitle}>Visit Site</Link>
           <Text style={s.entryDesc}>
             Secure multi-tenant healthcare platform with HIPAA-compliant data isolation, custom domain routing, OAuth2 + Active Directory auth, and tenant-specific workflow configurations.
           </Text>
