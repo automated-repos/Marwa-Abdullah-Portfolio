@@ -5,50 +5,52 @@ import { Building, Calendar, MapPin } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Freelance Backend & DevOps Engineer",
-      company: "Independent Consultancy",
-      location: "Alexandria, Egypt",
-      period: "Sep 2025 - Present",
-      description: "Establishing independent consultancy specializing in quality-first Laravel development and DevOps automation. Building resilient backend systems with a tester's mindset for failure prevention.",
+      title: "Backend Engineer (Part-time)",
+      company: "Merspire",
+      location: "Remote, Egypt",
+      period: "Oct 2025 - Present",
+      description: "Leads backend engineering for Bareeq, a production SaaS platform for jewelry store management. Responsible for backend development, DevOps operations, and quality assurance across the full product lifecycle.",
       achievements: [
-        "Developing comprehensive backend solutions with quality-first approach",
-        "Creating robust CI/CD strategies for automated deployments",
-        "Building consultancy focused on resilient system architecture",
-        "Establishing expertise in failure-resistant Laravel applications",
-        "Preparing technical solutions that anticipate real-world challenges"
+        "Architected and built the backend for Bareeq, a live multi-tenant SaaS serving jewelry retailers",
+        "Designed REST APIs powering real-time POS, inventory, and financial management features",
+        "Implemented QR-code-based product cataloging and invoice generation system",
+        "Managed multi-branch cash register and treasury tracking with live financial reporting",
+        "Owned end-to-end DevOps: deployment, monitoring, and infrastructure operations",
+        "Applied QA discipline to ensure reliability across all critical financial workflows"
       ],
-      tech: ["Laravel", "PHP", "DevOps", "CI/CD", "Quality Engineering", "System Architecture"]
+      tech: ["Laravel", "PHP", "MySQL", "REST API", "DevOps", "QA Testing", "Multi-tenant Architecture", "Docker"]
     },
     {
-      title: "Software Engineer & QA Engineer",
+      title: "Software Engineer",
       company: "nWeave",
       location: "Alexandria, Egypt",
       period: "Feb 2023 - Dec 2024",
-      description: "Responsible for designing, developing, and maintaining the backend architecture of a multi-tenant healthcare web application. Additionally served as QA Engineer (May 2024 - Oct 2024), bringing quality assurance expertise to development processes.",
+      description: "Designed and maintained the backend architecture of a multi-tenant healthcare SaaS platform (AHS-nWeave) serving multiple independent healthcare providers. Transitioned into a QA Engineer role (May–Oct 2024), embedding quality assurance practices into the active development cycle.",
       achievements: [
-        "Designed and maintained multi-tenant healthcare application backend",
-        "Built scalable APIs for complex healthcare workflows",
-        "Implemented comprehensive QA processes and testing strategies (May-Oct 2024)",
-        "Optimized database structures for improved performance",
-        "Established quality gates and testing protocols for healthcare compliance",
-        "Implemented robust authentication and authorization systems",
-        "Ensured seamless communication between central system and tenant databases"
+        "Architected the multi-tenant backend serving multiple healthcare providers under a unified system with strict data isolation per tenant",
+        "Built RESTful APIs for complex healthcare workflows including provider-specific configurations, patient data management, and centralized reporting",
+        "Implemented OAuth2 + Active Directory authentication with granular role-based access control",
+        "Led end-to-end API testing using Postman and documented critical bug findings that prevented production incidents",
+        "Optimized MS SQL Server database structures and query performance across central and tenant-specific databases",
+        "Established quality gates and testing protocols aligned with healthcare data compliance requirements",
+        "Ensured reliable communication between the central system and tenant databases using Laravel Queue Jobs"
       ],
-      tech: ["Laravel", "PHP", "MySQL", "REST API", "Multi-tenant Architecture", "Database Design", "QA Testing", "Test Strategy", "Quality Assurance"]
+      tech: ["Laravel", "PHP", "MS SQL Server", "MySQL", "REST API", "OAuth2", "Active Directory", "Multi-tenant Architecture", "Queue Jobs", "QA Testing"]
     },
     {
       title: "Laravel Developer (Freelance)",
       company: "Logic",
       location: "Cairo, Egypt",
       period: "Feb 2024 - Aug 2024",
-      description: "Freelance Laravel Developer who built custom systems with Laravel + Livewire, handling everything from database design to frontend support.",
+      description: "Freelance engagement (concurrent with nWeave role). Built a custom HR Assessment System from scratch using Laravel and Livewire, handling the full project lifecycle from database design to frontend delivery.",
       achievements: [
-        "Built custom systems using Laravel framework",
-        "Implemented Livewire for dynamic frontend interactions",
-        "Handled complete project lifecycle from DB design to frontend",
-        "Delivered robust solutions for various client requirements"
+        "Designed and built a modular HR assessment platform automating candidate evaluation and interview scheduling",
+        "Implemented multi-stage assessment workflows with configurable scoring and evaluator assignment",
+        "Built bulk Excel data import/export for candidate and assessment data management",
+        "Developed a dynamic scheduling matrix to optimize interviewer-candidate matching and availability",
+        "Created Chart.js-powered performance analytics dashboard and automated PDF report generation"
       ],
-      tech: ["Laravel", "Livewire", "PHP", "Database Design", "Full-stack Development"]
+      tech: ["Laravel", "Livewire", "PHP", "MySQL", "Bootstrap", "Chart.js", "PDF Reports"]
     }
   ];
 

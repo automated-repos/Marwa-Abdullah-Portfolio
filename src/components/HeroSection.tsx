@@ -1,8 +1,23 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Loader2 } from "lucide-react";
 import heroBackground from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = async () => {
+    setDownloading(true);
+    try {
+      const { downloadCV } = await import('../lib/generateCV');
+      await downloadCV();
+    } catch {
+      alert('Could not generate CV. Please try again.');
+    } finally {
+      setDownloading(false);
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
@@ -19,15 +34,14 @@ const HeroSection = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-24">
         <div className="space-y-6">
-          <br/><br/>
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
             Marwa Abdullah Elawady
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-primary font-semibold">
-           Backend Engineer | From Quality Assurance Insight to DevOps Execution
+            Software Engineer · Backend & Laravel Specialist
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -41,13 +55,19 @@ const HeroSection = () => {
               View My Work
               </Button>
             </a>
-            <Button 
-              variant="outline" 
-              size="lg" 
+            <Button
+              variant="outline"
+              size="lg"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold px-8"
-              onClick={() => window.open('https://automated-repos.github.io/Marwa-Abdullah-Portfolio/cv.pdf', '_blank')}
+              onClick={handleDownload}
+              disabled={downloading}
             >
-              Download Resume
+              {downloading ? (
+                <>
+                  <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                  Generating...
+                </>
+              ) : 'Download Resume'}
             </Button>
           </div>
           

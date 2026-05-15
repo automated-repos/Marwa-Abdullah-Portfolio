@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import logo from "@/assets/logo.jpg";
 
 const AboutSection = () => {
   const highlights = [
@@ -34,22 +35,19 @@ const AboutSection = () => {
               </p>
               
               <p className="text-lg text-foreground leading-relaxed">
-                I was asked to join the QA effort for a new project. Instead of seeing it as a setback, I embraced it. I discovered I had a talent for testing—for thinking of edge cases and potential flaws. For months, I helped ensure the new product was robust and reliable.
+                I was asked to join the QA effort for a new project. Instead of seeing it as a setback, I embraced it. I discovered I had a talent for testing-for thinking of edge cases and potential flaws. For months, I helped ensure the new product was robust and reliable.
               </p>
               
               <p className="text-lg text-foreground leading-relaxed">
-                But I missed building. So I made a decision: I would dedicate myself to returning to development, intentionally rebuilding my skills with a new perspective. I immersed myself in modern PHP, Laravel best practices, and, most crucially, began mastering DevOps principles to understand the entire software lifecycle.
+                But I missed building. So I made a decision: I would dedicate myself to returning to development, intentionally rebuilding my skills with a new perspective. I deepened my understanding of system design and distributed architecture - studying how data-intensive systems are built and where they break. I sharpened my Laravel and PHP knowledge through real interview preparation and hands-on exploration, not just documentation reading.
               </p>
-              
+
               <p className="text-lg text-foreground leading-relaxed">
-                Today, I am a more well-rounded Software Engineer. My 2+ years of backend experience is now complemented by a tester's discipline for quality and a growing knowledge of CI/CD and automation. I don't just build features, I build resilient systems that anticipate failure and stand up to real-world challenges.
+                Today, I am a more well-rounded engineer. I write backend code that is reliable by design - not just functional. That background in quality assurance didn't change my career path, it sharpened how I think about edge cases, API contracts, and system behaviour under real-world conditions.
               </p>
-              
+
               <p className="text-lg text-primary font-semibold leading-relaxed">
-                My journey taught me that quality isn't just found in testing—it's built through automation and sound infrastructure. Now, I'm channeling that mindset into DevOps: mastering tools like Docker, AWS, and CI/CD pipelines to not just anticipate failure, but to engineer systems that are inherently resilient, scalable, and reliable from the ground up.
-              </p>
-              <p className="text-lg text-primary font-semibold leading-relaxed">
-                I'm ready to apply this unique blend of development experience and operational thinking to your next project.
+                My goal is to grow into a Senior Software Engineer - someone who doesn't just implement features but helps shape the architecture behind them. I'm looking for a backend role, ideally Laravel-focused, where I can take ownership, go deep, and keep getting better.
               </p>
               <div className="pt-6">
                 <h4 className="text-xl font-semibold mb-4 text-primary">Key Expertise</h4>
@@ -72,9 +70,11 @@ const AboutSection = () => {
               <CardContent className="p-4">
                 <div className="space-y-6">
                   <div className="text-center">
-                    <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center text-3xl font-bold text-primary-foreground">
-                      MA
-                    </div>
+                    <img
+                      src={logo}
+                      alt="Marwa Abdullah Elawady"
+                      className="w-24 h-24 mx-auto mb-4 rounded-full object-cover border-2 border-primary/40 shadow-skill-glow"
+                    />
                     <h4 className="text-xl font-bold text-primary mb-2">Marwa Abdullah Elawady</h4>
                     <p className="text-muted-foreground text-sm">Backend Engineer & DevOps Enthusiast</p>
                   </div>

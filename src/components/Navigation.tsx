@@ -1,10 +1,24 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Loader2 } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = async () => {
+    setDownloading(true);
+    try {
+      const { downloadCV } = await import('../lib/generateCV');
+      await downloadCV();
+    } catch {
+      alert('Could not generate CV. Please try again.');
+    } finally {
+      setDownloading(false);
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,8 +53,15 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Marwa A.
+          <div className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt="Marwa Abdullah"
+              className="w-10 h-10 rounded-full object-cover border-2 border-primary/40"
+            />
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Marwa A.
+            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -54,12 +75,13 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
-            <Button 
-              size="sm" 
+            <Button
+              size="sm"
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
-              onClick={() => window.open('https://automated-repos.github.io/Marwa-Abdullah-Portfolio/cv.pdf', '_blank')}
+              onClick={handleDownload}
+              disabled={downloading}
             >
-              Resume
+              {downloading ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Resume'}
             </Button>
           </div>
 
