@@ -420,15 +420,15 @@ export const CVDocument = () => (
           </View>
           <Text style={s.entrySubtitle}>YAT Academy - MCIT · Remote, Egypt · 4 Months  ·  PHP, Laravel, Database</Text>
         </View>
-      </View>
 
-      {/* LANGUAGES */}
-      <View wrap={false} style={s.section}>
-        <SecTitle>Languages</SecTitle>
-        <View style={s.langRow}>
-          <Text style={s.langItem}><Text style={s.langBold}>Arabic</Text>: Native/Bilingual</Text>
-          <Text style={s.langItem}><Text style={s.langBold}>English</Text>: Fluent</Text>
-          <Text style={s.langItem}><Text style={s.langBold}>German</Text>: Basic</Text>
+        {/* Languages — kept inside Education to prevent page 3 */}
+        <View style={{ marginTop: 7 }}>
+          <SecTitle>Languages</SecTitle>
+          <View style={s.langRow}>
+            <Text style={s.langItem}><Text style={s.langBold}>Arabic</Text>: Native/Bilingual</Text>
+            <Text style={s.langItem}><Text style={s.langBold}>English</Text>: Fluent</Text>
+            <Text style={s.langItem}><Text style={s.langBold}>German</Text>: Basic</Text>
+          </View>
         </View>
       </View>
 
