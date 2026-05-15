@@ -14,7 +14,7 @@ const s = StyleSheet.create({
     fontFamily: 'Helvetica',
     fontSize: 9.5,
     paddingTop: 34,
-    paddingBottom: 18,
+    paddingBottom: 14,
     paddingHorizontal: 44,
     color: C.text,
     lineHeight: 1.45,
@@ -121,7 +121,7 @@ const s = StyleSheet.create({
   techRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    marginTop: 3,
+    marginTop: 1,
   },
   tag: {
     fontSize: 7.5,
@@ -129,7 +129,7 @@ const s = StyleSheet.create({
     paddingHorizontal: 4,
     paddingVertical: 1.5,
     marginRight: 3,
-    marginBottom: 2,
+    marginBottom: 1,
     borderRadius: 2,
     borderWidth: 0.5,
     borderColor: C.border,
@@ -422,7 +422,7 @@ export const CVDocument = () => (
         </View>
 
         {/* Languages — kept inside Education to prevent page 3 */}
-        <View style={{ marginTop: 7 }}>
+        <View wrap={false} style={{ marginTop: 7 }}>
           <SecTitle>Languages</SecTitle>
           <View style={s.langRow}>
             <Text style={s.langItem}><Text style={s.langBold}>Arabic</Text>: Native/Bilingual</Text>
