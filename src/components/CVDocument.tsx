@@ -1,7 +1,7 @@
 import { Document, Page, Text, View, StyleSheet, Link } from '@react-pdf/renderer';
 
 const C = {
-  accent: '#4338ca',
+  accent: '#10b981',
   text: '#111827',
   sub: '#374151',
   muted: '#6b7280',
