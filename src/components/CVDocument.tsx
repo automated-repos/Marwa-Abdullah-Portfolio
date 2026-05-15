@@ -211,6 +211,7 @@ export const CVDocument = () => (
           <Text style={s.contactItem}>Alexandria, Egypt</Text>
           <Link src="https://github.com/workytip" style={s.contactItem}>github.com/workytip</Link>
           <Link src="https://linkedin.com/in/marwa-abdullah-cs" style={s.contactItem}>linkedin.com/in/marwa-abdullah-cs</Link>
+          <Link src="https://marwa.elawady.site" style={s.contactItem}>marwa.elawady.site</Link>
         </View>
       </View>
 
