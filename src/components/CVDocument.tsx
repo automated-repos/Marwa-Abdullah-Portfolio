@@ -167,19 +167,6 @@ const s = StyleSheet.create({
     lineHeight: 1.5,
     color: C.sub,
   },
-  // Languages
-  langRow: {
-    flexDirection: 'row',
-  },
-  langItem: {
-    fontSize: 9,
-    marginRight: 22,
-    color: C.sub,
-  },
-  langBold: {
-    fontFamily: 'Helvetica-Bold',
-    fontSize: 9,
-  },
 });
 
 const Bullet = ({ text }: { text: string }) => (
@@ -316,6 +303,10 @@ export const CVDocument = () => (
             <Text style={s.skillCatName}>Development Practices</Text>
             <Text style={s.skillItems}>QA Processes, API Testing (Postman), JIRA, Agile / Scrum</Text>
           </View>
+          <View style={{ width: '100%', marginBottom: 4, paddingRight: 10 }}>
+            <Text style={s.skillCatName}>Languages</Text>
+            <Text style={s.skillItems}>Arabic (Native/Bilingual)  ·  English (Fluent)  ·  German (Basic)</Text>
+          </View>
         </View>
       </View>
 
@@ -389,10 +380,10 @@ export const CVDocument = () => (
 
         <View style={s.entrySmall}>
           <View style={s.topRow}>
-            <Text style={s.entryTitle}>DevOps Engineer Track (6 Months)</Text>
+            <Text style={s.entryTitle}>DevOps Engineer Track</Text>
             <Text style={s.entryPeriod}>Jun 2025 – Jan 2026</Text>
           </View>
-          <Text style={s.entrySubtitle}>DEPI-MCIT · Alexandria, Egypt</Text>
+          <Text style={s.entrySubtitle}>DEPI-MCIT · Alexandria, Egypt · 6 Months</Text>
         </View>
 
         <View style={s.entrySmall}>
@@ -400,7 +391,7 @@ export const CVDocument = () => (
             <Text style={s.entryTitle}>Cyber Security Scholarship</Text>
             <Text style={s.entryPeriod}>Aug 2025 – Sep 2025</Text>
           </View>
-          <Text style={s.entrySubtitle}>NTI-MCIT · Egypt  ·  VPN, OS Security, F5, BigIP, Trellix, GCP Security</Text>
+          <Text style={s.entrySubtitle}>NTI-MCIT · Egypt</Text>
         </View>
 
         <View style={s.entrySmall}>
@@ -424,18 +415,9 @@ export const CVDocument = () => (
             <Text style={s.entryTitle}>Professional Full Stack Diploma: Web Development</Text>
             <Text style={s.entryPeriod}>Aug 2020 – Nov 2020</Text>
           </View>
-          <Text style={s.entrySubtitle}>YAT Academy - MCIT · Remote, Egypt · 4 Months  ·  PHP, Laravel, Database</Text>
+          <Text style={s.entrySubtitle}>YAT Academy - MCIT · Remote, Egypt · 4 Months</Text>
         </View>
 
-        {/* Languages — kept inside Education to prevent page 3 */}
-        <View wrap={false} style={{ marginTop: 7 }}>
-          <SecTitle>Languages</SecTitle>
-          <View style={s.langRow}>
-            <Text style={s.langItem}><Text style={s.langBold}>Arabic</Text>: Native/Bilingual</Text>
-            <Text style={s.langItem}><Text style={s.langBold}>English</Text>: Fluent</Text>
-            <Text style={s.langItem}><Text style={s.langBold}>German</Text>: Basic</Text>
-          </View>
-        </View>
       </View>
 
     </Page>
