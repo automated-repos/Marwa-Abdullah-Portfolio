@@ -2,13 +2,10 @@ import { pdf } from '@react-pdf/renderer';
 import { CVDocument } from '../components/CVDocument';
 
 export const downloadCV = async (): Promise<void> => {
+  const newWindow = window.open('', '_blank');
   const blob = await pdf(<CVDocument />).toBlob();
   const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'Marwa-Abdullah-Elawady-CV.pdf';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  URL.revokeObjectURL(url);
+  if (newWindow) {
+    newWindow.location.href = url;
+  }
 };
