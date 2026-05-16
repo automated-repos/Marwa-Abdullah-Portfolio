@@ -98,8 +98,8 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-primary/20">
-            <div className="flex flex-col space-y-4 pt-4">
+          <div className="md:hidden mt-4 pb-4 border-t border-primary/20 bg-background rounded-b-xl shadow-lg">
+            <div className="flex flex-col space-y-4 pt-4 px-2">
               {navItems.map((item) => (
                 <button
                   key={item.name}
@@ -109,12 +109,13 @@ const Navigation = () => {
                   {item.name}
                 </button>
               ))}
-              <Button 
-                size="sm" 
+              <Button
+                size="sm"
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold w-fit"
-                onClick={() => window.open('https://automated-repos.github.io/Marwa-Abdullah-Portfolio/cv.pdf', '_blank')}
+                onClick={handleDownload}
+                disabled={downloading}
               >
-                Resume
+                {downloading ? <Loader2 className="h-4 w-4 animate-spin" /> : 'Resume'}
               </Button>
             </div>
           </div>
