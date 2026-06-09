@@ -268,39 +268,47 @@ export const CVDocument = () => (
       <View style={s.section}>
         <SecTitle>Technical Skills</SecTitle>
         <View style={s.skillsGrid}>
-          <View style={s.skillCol}>
-            <Text style={s.skillCatName}>Backend Development</Text>
-            <Text style={s.skillItems}>PHP, Laravel, REST API, OOP, System Architecture, Queue Jobs</Text>
+          <View wrap={false} style={{ flexDirection: 'row', width: '100%' }}>
+            <View style={s.skillCol}>
+              <Text style={s.skillCatName}>Backend Development</Text>
+              <Text style={s.skillItems}>PHP, Laravel, REST API, OOP, System Architecture, Queue Jobs</Text>
+            </View>
+            <View style={s.skillCol}>
+              <Text style={s.skillCatName}>DevOps & CI/CD</Text>
+              <Text style={s.skillItems}>Git, GitHub Actions, CI/CD Pipelines, Docker, Ansible, Bash Scripting</Text>
+            </View>
           </View>
-          <View style={s.skillCol}>
-            <Text style={s.skillCatName}>DevOps & CI/CD</Text>
-            <Text style={s.skillItems}>Git, GitHub Actions, CI/CD Pipelines, Docker, Ansible, Bash Scripting</Text>
+          <View wrap={false} style={{ flexDirection: 'row', width: '100%' }}>
+            <View style={s.skillCol}>
+              <Text style={s.skillCatName}>Database Design & Management</Text>
+              <Text style={s.skillItems}>MySQL, MS SQL Server, Database Design, Query Optimization, Eloquent ORM</Text>
+            </View>
+            <View style={s.skillCol}>
+              <Text style={s.skillCatName}>Infrastructure & Deployment</Text>
+              <Text style={s.skillItems}>Linux, Nginx / Apache, Deployment Automation, Server Provisioning</Text>
+            </View>
           </View>
-          <View style={s.skillCol}>
-            <Text style={s.skillCatName}>Database Design & Management</Text>
-            <Text style={s.skillItems}>MySQL, MS SQL Server, Database Design, Query Optimization, Eloquent ORM</Text>
+          <View wrap={false} style={{ flexDirection: 'row', width: '100%' }}>
+            <View style={s.skillCol}>
+              <Text style={s.skillCatName}>Laravel Ecosystem</Text>
+              <Text style={s.skillItems}>Livewire, Multi-tenant Architecture, Sanctum, Task Scheduling, Observers / Events, Artisan</Text>
+            </View>
+            <View style={s.skillCol}>
+              <Text style={s.skillCatName}>Frontend Proficiency</Text>
+              <Text style={s.skillItems}>HTML, CSS, JavaScript, Bootstrap, ReactJs, Angular</Text>
+            </View>
           </View>
-          <View style={s.skillCol}>
-            <Text style={s.skillCatName}>Infrastructure & Deployment</Text>
-            <Text style={s.skillItems}>Linux, Nginx / Apache, Deployment Automation, Server Provisioning</Text>
+          <View wrap={false} style={{ flexDirection: 'row', width: '100%' }}>
+            <View style={s.skillCol}>
+              <Text style={s.skillCatName}>Development Practices</Text>
+              <Text style={s.skillItems}>QA Processes, API Testing (Postman), JIRA, Agile / Scrum</Text>
+            </View>
+            <View style={s.skillCol}>
+              <Text style={s.skillCatName}>AI-Assisted Development</Text>
+              <Text style={s.skillItems}>Lovable, Claude AI, GitHub Copilot, Qodo, DeepSeek</Text>
+            </View>
           </View>
-          <View style={s.skillCol}>
-            <Text style={s.skillCatName}>Laravel Ecosystem</Text>
-            <Text style={s.skillItems}>Livewire, Multi-tenant Architecture, Sanctum, Task Scheduling, Observers / Events, Artisan</Text>
-          </View>
-          <View style={s.skillCol}>
-            <Text style={s.skillCatName}>Frontend Proficiency</Text>
-            <Text style={s.skillItems}>HTML, CSS, JavaScript, Bootstrap, ReactJs, Angular</Text>
-          </View>
-          <View style={s.skillCol}>
-            <Text style={s.skillCatName}>Development Practices</Text>
-            <Text style={s.skillItems}>QA Processes, API Testing (Postman), JIRA, Agile / Scrum</Text>
-          </View>
-          <View style={s.skillCol}>
-            <Text style={s.skillCatName}>AI-Assisted Development</Text>
-            <Text style={s.skillItems}>Lovable, Claude AI, GitHub Copilot, Qodo, DeepSeek</Text>
-          </View>
-          <View style={{ width: '100%', marginBottom: 4, paddingRight: 10 }}>
+          <View wrap={false} style={{ width: '100%', marginBottom: 4, paddingRight: 10 }}>
             <Text style={s.skillCatName}>Languages</Text>
             <Text style={s.skillItems}>Arabic (Native/Bilingual)  ·  English (Fluent)  ·  German (Basic)</Text>
           </View>
