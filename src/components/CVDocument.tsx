@@ -212,7 +212,7 @@ export const CVDocument = () => (
       <View style={s.section}>
         <SecTitle>Profile</SecTitle>
         <Text style={s.profileText}>
-          Software Engineer with 2+ years of professional backend experience, specialising in PHP and Laravel. Proven track record building production systems, from multi-tenant SaaS platforms and RESTful APIs to complex database architecture and third-party integrations. Known for writing reliable, well-structured code shaped by a background that included quality assurance. Comfortable owning a backend system end-to-end and eager to grow into a Senior Software Engineer role where I can contribute to architecture decisions and deliver scalable, maintainable solutions.
+          Software Engineer with 2+ years of professional backend experience, specialising in PHP and Laravel. Proven track record delivering production systems — from multi-tenant SaaS platforms and RESTful APIs to full products owned solo using AI-assisted workflows (Claude AI, Lovable, GitHub Copilot). Known for reliable, well-structured code shaped by a QA-informed background. Comfortable owning a backend end-to-end; actively leveraging AI tools to accelerate delivery and ship independently — and eager to grow into a Senior Engineer role contributing to architecture decisions and scalable solutions.
         </Text>
       </View>
 
@@ -226,17 +226,10 @@ export const CVDocument = () => (
             <Text style={s.entryPeriod}>Oct 2025 – Present</Text>
           </View>
           <Text style={s.entrySubtitle}>Merspire · Remote, Egypt</Text>
-          <Text style={s.entryDesc}>
-            Leads backend engineering for Bareeq, a production SaaS platform for jewelry store management. Owns the full backend lifecycle: API design, database architecture, DevOps operations, and quality assurance.
-          </Text>
-          <Bullet text="Architected and built the complete backend for Bareeq, a live multi-tenant SaaS serving jewelry retailers" />
-          <Bullet text="Designed REST APIs powering real-time POS, inventory tracking, and financial management features" />
-          <Bullet text="Implemented QR-code-based product cataloging and automated invoice generation system" />
-          <Bullet text="Built multi-branch cash register and treasury management with live financial reporting and analytics" />
-          <Bullet text="Owns server operations on DigitalOcean Droplet: Nginx configuration, SSL, and production environment management" />
-          <Bullet text="Built and maintains GitHub Actions CI/CD pipeline for automated testing and zero-downtime deployments" />
-          <Bullet text="Applied QA discipline with systematic testing across all critical financial and transactional workflows" />
-          <Bullet text="Currently building IoT/NFC integration for fast, hands-free inventory stocktaking" />
+          <Bullet text="Architected and built the complete backend for Bareeq — a live multi-tenant SaaS for jewelry retailers covering POS, inventory, supplier management, and multi-branch financial reporting" />
+          <Bullet text="Designed REST APIs, managed DigitalOcean server ops (Nginx, SSL), and built GitHub Actions CI/CD pipeline for zero-downtime deployments" />
+          <Bullet text="Implemented QR-code product cataloging, automated invoice generation, and live treasury tracking across branches" />
+          <Bullet text="Currently integrating IoT/NFC for fast, hands-free stocktaking; applied QA discipline across all critical financial workflows" />
           <Tags items={['Laravel', 'PHP', 'MySQL', 'REST API', 'Redis', 'Laravel Octane', 'DigitalOcean', 'Nginx', 'GitHub Actions', 'CI/CD', 'Multi-tenant Architecture', 'NFC / IoT']} />
         </View>
 
@@ -340,29 +333,6 @@ export const CVDocument = () => (
             Secure multi-tenant healthcare platform with HIPAA-compliant data isolation, custom domain routing, OAuth2 + Active Directory auth, and tenant-specific workflow configurations.
           </Text>
           <Tags items={['Laravel', 'OAuth2', 'Active Directory', 'Multi-tenancy', 'MS SQL Server', 'Queue Jobs', 'Domain Routing']} />
-        </View>
-
-        <View style={s.entrySmall}>
-          <View style={s.topRow}>
-            <Text style={s.entryTitle}>HR Assessment System</Text>
-            <Text style={s.entryPeriod}>2024</Text>
-          </View>
-          <Text style={s.entryDesc}>
-            Hiring automation platform with multi-stage assessments, bulk Excel data handling, dynamic interviewer-candidate scheduling matrix, and PDF report generation.
-          </Text>
-          <Tags items={['Laravel', 'Livewire', 'PHP', 'MySQL', 'Chart.js', 'PDF Reports']} />
-        </View>
-
-        <View style={s.entrySmall}>
-          <View style={s.topRow}>
-            <Text style={s.entryTitle}>Social Media Content Scheduler</Text>
-            <Text style={s.entryPeriod}>2023</Text>
-          </View>
-          <Text style={s.entryDesc}>
-            Full-stack scheduling dashboard using Laravel Queues and Job Scheduling for reliable async post publishing, with a React frontend.
-          </Text>
-          <Link src="https://github.com/workytip/content-scheduler" style={s.entrySubtitle}>GitHub</Link>
-          <Tags items={['Laravel', 'React', 'MySQL', 'Queue Jobs', 'REST API']} />
         </View>
 
         <View style={s.entrySmall}>
