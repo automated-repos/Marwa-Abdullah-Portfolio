@@ -70,7 +70,7 @@ const s = StyleSheet.create({
     marginBottom: 7,
   },
   entrySmall: {
-    marginBottom: 2,
+    marginBottom: 6,
   },
   topRow: {
     flexDirection: 'row',
