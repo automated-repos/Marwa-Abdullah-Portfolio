@@ -337,6 +337,16 @@ export const CVDocument = () => (
 
         <View style={s.entrySmall}>
           <View style={s.topRow}>
+            <Text style={s.entryTitle}>HR Assessment System</Text>
+            <Text style={s.entryPeriod}>2024</Text>
+          </View>
+          <Text style={s.entrySubtitle}>Logic · Freelance</Text>
+          <Text style={s.entryDesc}>Hiring automation platform with multi-stage assessments, bulk Excel data handling, dynamic interviewer-candidate scheduling matrix, and automated PDF report generation.</Text>
+          <Tags items={['Laravel', 'Livewire', 'PHP', 'MySQL', 'Chart.js', 'PDF Reports']} />
+        </View>
+
+        <View style={s.entrySmall}>
+          <View style={s.topRow}>
             <Text style={s.entryTitle}>Vibe Coding Projects — Product Owner (4 Live Apps)</Text>
             <Text style={s.entryPeriod}>2025 – Present</Text>
           </View>
