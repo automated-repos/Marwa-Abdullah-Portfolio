@@ -341,8 +341,14 @@ export const CVDocument = () => (
             <Text style={s.entryPeriod}>2025 – Present</Text>
           </View>
           <Text style={s.entryDesc}>
-            Conceived, designed, and shipped 4 live products end-to-end as sole product owner using AI-assisted development workflows — from idea to deployed app without a team: Musleh (conflict-resolution message rewriter), Mentor (adaptive developer growth platform with AI mentoring), Qaree' (daily reading tracker with annotations and vocabulary logging), Hafezon (Islamic productivity and Quran memorization tracker).
+            Conceived and shipped 4 live products solo as product owner using AI-assisted development workflows, from idea to deployed app without a team.
           </Text>
+          <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 2 }}>
+            <Link src="https://islah.lovable.app/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Musleh</Link>
+            <Link src="https://laravel-mentorship.lovable.app/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Mentor</Link>
+            <Link src="https://easy-reading.lovable.app/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Qaree'</Link>
+            <Link src="https://app.hafezon.site/" style={{ ...s.entrySubtitle, marginBottom: 0 }}>Hafezon</Link>
+          </View>
           <Tags items={['Lovable', 'Claude AI', 'GitHub Copilot', 'Qodo', 'DeepSeek', 'React', 'Supabase', 'TypeScript']} />
         </View>
       </View>
