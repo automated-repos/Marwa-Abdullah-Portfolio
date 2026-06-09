@@ -212,7 +212,7 @@ export const CVDocument = () => (
       <View style={s.section}>
         <SecTitle>Profile</SecTitle>
         <Text style={s.profileText}>
-          Software Engineer with 2+ years of professional backend experience, specialising in PHP and Laravel. Proven track record delivering production systems — from multi-tenant SaaS platforms and RESTful APIs to full products owned solo using AI-assisted workflows (Claude AI, Lovable, GitHub Copilot). Known for reliable, well-structured code shaped by a QA-informed background. Comfortable owning a backend end-to-end; actively leveraging AI tools to accelerate delivery and ship independently — and eager to grow into a Senior Engineer role contributing to architecture decisions and scalable solutions.
+          Software Engineer with 2+ years of professional backend experience, specialising in PHP and Laravel. Proven track record delivering production systems, from multi-tenant SaaS platforms and RESTful APIs to full products owned solo using AI-assisted workflows (Claude AI, GitHub Copilot). Known for reliable, well-structured code shaped by a QA-informed background. Comfortable owning a backend end-to-end; actively leveraging AI tools to accelerate delivery and ship independently, and eager to grow into a Senior Engineer role contributing to architecture decisions and scalable solutions.
         </Text>
       </View>
 
