@@ -19,6 +19,12 @@ import {
 const SkillsSection = () => {
     const skillCategories = [
       {
+        title: "AI-Assisted Development",
+        icon: Bot,
+        skills: ["Claude AI", "GitHub Copilot", "Qodo", "DeepSeek", "Lovable"],
+        color: "text-violet-400"
+      },
+      {
         title: "Backend Development",
         icon: Code,
         skills: ["PHP", "Laravel", "REST API", "OOP", "System Architecture"],
@@ -59,12 +65,6 @@ const SkillsSection = () => {
         icon: Container,
         skills: ["Livewire", "Multi-tenant Architecture", "Eloquent ORM", "Artisan"],
         color: "text-yellow-400"
-      },
-      {
-        title: "AI-Assisted Development",
-        icon: Bot,
-        skills: ["Lovable", "Claude AI", "GitHub Copilot", "Qodo", "DeepSeek"],
-        color: "text-violet-400"
       },
       // {
       //   title: "Currently Mastering",
