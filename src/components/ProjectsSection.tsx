@@ -58,6 +58,13 @@ import logic4 from "@/assets/logic/logic4.png";
 import logic5 from "@/assets/logic/logic5.png";
 import logic6 from "@/assets/logic/logic6.png";
 
+import qaree1 from "@/assets/qaree'/1.png";
+import qaree2 from "@/assets/qaree'/2.png";
+import mosleh1 from "@/assets/mosleh/1.png";
+import mentor1 from "@/assets/mentor/1.png";
+import mentor2 from "@/assets/mentor/2.png";
+import mentor3 from "@/assets/mentor/3.png";
+
 type Project = {
   title: string;
   description: string;
@@ -71,7 +78,7 @@ type Project = {
   coverPosition?: string;
   demoLabel?: string;
   repos?: { label: string; url: string }[];
-  category: "Backend" | "Full Stack" | "DevOps" | "Product" | "Vibe Coding";
+  category: "Backend" | "Full Stack" | "DevOps" | "Vibe Coding";
 };
 
 const projects: Project[] = [
@@ -156,43 +163,36 @@ const projects: Project[] = [
     category: "Full Stack",
   },
   {
-    title: "Be Fluent – Language Fluency App",
-    description: "A language fluency companion that helps users build speaking confidence through structured practice tracking and progress milestones. Conceived, designed, and shipped solo as product owner using AI-assisted development.",
+    title: "Musleh – Conflict Resolution & Message Rewriter",
+    description: "A communication mediation tool that helps people in conflict express themselves with clarity and empathy. Paste a message and Musleh reformulates it into a calmer, more constructive version — so both sides feel heard, not attacked. Built and shipped solo as product owner.",
     tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Lovable", "Claude AI"],
-    highlights: ["Full Product Ownership", "Concept to Live App", "AI-Assisted Build"],
-    github: null,
-    demo: "https://be-fluent.lovable.app/",
-    demoLabel: "Visit App",
-    category: "Vibe Coding",
-  },
-  {
-    title: "Islah – Self-Improvement Tracker",
-    description: "A habit reform and self-improvement app inspired by the Arabic concept of islāh (to correct, to better oneself). Helps users commit to daily goals and track meaningful personal change. Shipped end-to-end as product owner.",
-    tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Lovable", "Claude AI"],
-    highlights: ["Full Product Ownership", "Habit Tracking", "AI-Assisted Build"],
+    highlights: ["Full Product Ownership", "AI-Powered Rewriting", "Conflict Mediation"],
     github: null,
     demo: "https://islah.lovable.app/",
     demoLabel: "Visit App",
+    screenshots: [mosleh1],
     category: "Vibe Coding",
   },
   {
-    title: "Laravel Mentorship Platform",
-    description: "A developer mentorship platform connecting Laravel learners with experienced engineers. Features mentor profiles, session planning, and guided career progression paths. Owned and shipped independently using AI-powered workflows.",
+    title: "Mentor – Technical Growth Platform",
+    description: "A developer growth companion that turns self-learning into a structured journey. Features skill-level assessment, curated learning paths, problem-solving challenges, quizzes, project prompts, and an AI-powered smart mentor that adapts to where you are and pushes you forward.",
     tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Lovable", "Claude AI"],
-    highlights: ["Full Product Ownership", "Mentor Matching", "AI-Assisted Build"],
+    highlights: ["Full Product Ownership", "Adaptive Learning", "AI Smart Mentor"],
     github: null,
     demo: "https://laravel-mentorship.lovable.app/",
     demoLabel: "Visit App",
+    screenshots: [mentor1, mentor2, mentor3],
     category: "Vibe Coding",
   },
   {
-    title: "Easy Reading – Accessible Reader",
-    description: "A reading accessibility tool that makes digital content easier to process with adjustable typography, line spacing, and distraction-free focus modes. Built and shipped solo from concept to deployed product.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Lovable", "Claude AI"],
-    highlights: ["Full Product Ownership", "Accessibility Focus", "AI-Assisted Build"],
+    title: "Qaree' – Daily Reading Tracker",
+    description: "A personal reading companion that turns passive reading into an active habit. Set daily page-based goals for any book, annotate key passages, leave inline comments on sections, and log new vocabulary and terminology — so every book becomes a living knowledge journal.",
+    tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Lovable", "Claude AI"],
+    highlights: ["Full Product Ownership", "Reading Goals", "Vocabulary Tracking"],
     github: null,
     demo: "https://easy-reading.lovable.app/",
     demoLabel: "Visit App",
+    screenshots: [qaree1, qaree2],
     category: "Vibe Coding",
   },
   {
@@ -203,7 +203,7 @@ const projects: Project[] = [
     github: "https://github.com/workytip/hafezon",
     demo: "https://app.hafezon.site/",
     screenshots: [hafezon1, hafezon2, hafezon3, hafezon4, hafezon5, hafezon6, hafezon7],
-    category: "Product",
+    category: "Vibe Coding",
   },
 ];
 
@@ -374,8 +374,8 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
   );
 };
 
-type Category = "All" | "Backend" | "Full Stack" | "DevOps" | "Product" | "Vibe Coding";
-const TABS: Category[] = ["All", "Backend", "Full Stack", "DevOps", "Product", "Vibe Coding"];
+type Category = "All" | "Backend" | "Full Stack" | "DevOps" | "Vibe Coding";
+const TABS: Category[] = ["All", "Backend", "Full Stack", "DevOps", "Vibe Coding"];
 
 const ProjectsSection = () => {
   const [selected, setSelected] = useState<Project | null>(null);

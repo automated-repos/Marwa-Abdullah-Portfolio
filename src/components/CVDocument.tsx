@@ -371,7 +371,7 @@ export const CVDocument = () => (
             <Text style={s.entryPeriod}>2025 – Present</Text>
           </View>
           <Text style={s.entryDesc}>
-            Conceived, designed, and shipped 4 live web applications as sole product owner using AI-assisted development — from zero to deployed without a team: Be Fluent (language fluency), Islah (habit reform), Laravel Mentorship (developer mentorship), Easy Reading (accessibility reader).
+            Conceived, designed, and shipped 4 live products end-to-end as sole product owner using AI-assisted development workflows — from idea to deployed app without a team: Musleh (conflict-resolution message rewriter), Mentor (adaptive developer growth platform with AI mentoring), Qaree' (daily reading tracker with annotations and vocabulary logging), Hafezon (Islamic productivity and Quran memorization tracker).
           </Text>
           <Tags items={['Lovable', 'Claude AI', 'GitHub Copilot', 'Qodo', 'DeepSeek', 'React', 'Supabase', 'TypeScript']} />
         </View>
