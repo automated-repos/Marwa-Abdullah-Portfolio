@@ -66,12 +66,12 @@ const SkillsSection = () => {
         skills: ["Lovable", "Claude AI", "GitHub Copilot", "Qodo", "DeepSeek"],
         color: "text-violet-400"
       },
-      {
-        title: "Currently Mastering",
-        icon: TrendingUp,
-        skills: ["Kubernetes", "Terraform", "AWS", "Jenkins", "Prometheus", "GCP"],
-        color: "text-pink-400"
-      }
+      // {
+      //   title: "Currently Mastering",
+      //   icon: TrendingUp,
+      //   skills: ["Kubernetes", "Terraform", "AWS", "Jenkins", "Prometheus", "GCP"],
+      //   color: "text-pink-400"
+      // }
     ];
 
   return (
