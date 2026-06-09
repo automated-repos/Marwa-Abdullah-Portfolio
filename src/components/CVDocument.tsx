@@ -13,32 +13,32 @@ const s = StyleSheet.create({
   page: {
     fontFamily: 'Helvetica',
     fontSize: 9.5,
-    paddingTop: 34,
-    paddingBottom: 14,
+    paddingTop: 30,
+    paddingBottom: 30,
     paddingHorizontal: 44,
     color: C.text,
-    lineHeight: 1.45,
+    lineHeight: 1.4,
   },
   // Header
   header: {
-    marginBottom: 11,
-    paddingBottom: 10,
+    marginBottom: 9,
+    paddingBottom: 8,
     borderBottomWidth: 2,
     borderBottomColor: C.accent,
     borderBottomStyle: 'solid',
   },
   name: {
     fontFamily: 'Helvetica-Bold',
-    fontSize: 22,
-    lineHeight: 1.3,
-    marginBottom: 14,
+    fontSize: 21,
+    lineHeight: 1.2,
+    marginBottom: 3,
     color: C.text,
   },
   jobTitle: {
-    fontSize: 11,
+    fontSize: 10.5,
     color: C.accent,
     lineHeight: 1.3,
-    marginBottom: 8,
+    marginBottom: 6,
   },
   contactRow: {
     flexDirection: 'row',
@@ -51,26 +51,26 @@ const s = StyleSheet.create({
   },
   // Section
   section: {
-    marginBottom: 7,
+    marginBottom: 6,
   },
   sectionTitle: {
     fontFamily: 'Helvetica-Bold',
-    fontSize: 9.5,
-    letterSpacing: 0.8,
+    fontSize: 9,
+    letterSpacing: 0.9,
     textTransform: 'uppercase',
     color: C.text,
     borderBottomWidth: 1,
     borderBottomColor: C.border,
     borderBottomStyle: 'solid',
     paddingBottom: 2,
-    marginBottom: 6,
+    marginBottom: 5,
   },
   // Entry (experience / project / education)
   entry: {
-    marginBottom: 8,
+    marginBottom: 7,
   },
   entrySmall: {
-    marginBottom: 1,
+    marginBottom: 2,
   },
   topRow: {
     flexDirection: 'row',
@@ -97,8 +97,8 @@ const s = StyleSheet.create({
   entryDesc: {
     fontSize: 8.5,
     color: C.sub,
-    marginBottom: 3,
-    lineHeight: 1.45,
+    marginBottom: 2,
+    lineHeight: 1.4,
   },
   // Bullets
   bulletRow: {
@@ -114,7 +114,7 @@ const s = StyleSheet.create({
   bulletText: {
     flex: 1,
     fontSize: 8.5,
-    lineHeight: 1.45,
+    lineHeight: 1.4,
     color: C.sub,
   },
   // Tech tags
@@ -147,7 +147,7 @@ const s = StyleSheet.create({
   },
   skillCol: {
     width: '50%',
-    marginBottom: 4,
+    marginBottom: 3,
     paddingRight: 10,
   },
   skillCatName: {
@@ -163,8 +163,8 @@ const s = StyleSheet.create({
   },
   // Profile
   profileText: {
-    fontSize: 9.5,
-    lineHeight: 1.5,
+    fontSize: 9,
+    lineHeight: 1.45,
     color: C.sub,
   },
 });
@@ -265,7 +265,7 @@ export const CVDocument = () => (
       </View>
 
       {/* TECHNICAL SKILLS */}
-      <View break style={s.section}>
+      <View style={s.section}>
         <SecTitle>Technical Skills</SecTitle>
         <View style={s.skillsGrid}>
           <View style={s.skillCol}>
@@ -344,10 +344,10 @@ export const CVDocument = () => (
             Conceived and shipped 4 live products solo as product owner using AI-assisted development workflows, from idea to deployed app without a team.
           </Text>
           <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 2 }}>
+            <Link src="https://app.hafezon.site/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Hafezon</Link>
             <Link src="https://islah.lovable.app/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Musleh</Link>
             <Link src="https://laravel-mentorship.lovable.app/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Mentor</Link>
-            <Link src="https://easy-reading.lovable.app/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Qaree'</Link>
-            <Link src="https://app.hafezon.site/" style={{ ...s.entrySubtitle, marginBottom: 0 }}>Hafezon</Link>
+            <Link src="https://easy-reading.lovable.app/" style={{ ...s.entrySubtitle, marginBottom: 0 }}>Qaree'</Link>
           </View>
           <Tags items={['Lovable', 'Claude AI', 'GitHub Copilot', 'Qodo', 'DeepSeek', 'React', 'Supabase', 'TypeScript']} />
         </View>
