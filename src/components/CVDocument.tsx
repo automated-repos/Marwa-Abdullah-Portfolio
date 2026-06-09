@@ -303,6 +303,10 @@ export const CVDocument = () => (
             <Text style={s.skillCatName}>Development Practices</Text>
             <Text style={s.skillItems}>QA Processes, API Testing (Postman), JIRA, Agile / Scrum</Text>
           </View>
+          <View style={s.skillCol}>
+            <Text style={s.skillCatName}>AI-Assisted Development</Text>
+            <Text style={s.skillItems}>Lovable, Claude AI, GitHub Copilot, Qodo, DeepSeek</Text>
+          </View>
           <View style={{ width: '100%', marginBottom: 4, paddingRight: 10 }}>
             <Text style={s.skillCatName}>Languages</Text>
             <Text style={s.skillItems}>Arabic (Native/Bilingual)  ·  English (Fluent)  ·  German (Basic)</Text>
@@ -359,6 +363,17 @@ export const CVDocument = () => (
           </Text>
           <Link src="https://github.com/workytip/content-scheduler" style={s.entrySubtitle}>GitHub</Link>
           <Tags items={['Laravel', 'React', 'MySQL', 'Queue Jobs', 'REST API']} />
+        </View>
+
+        <View style={s.entrySmall}>
+          <View style={s.topRow}>
+            <Text style={s.entryTitle}>Vibe Coding Projects — Product Owner (4 Live Apps)</Text>
+            <Text style={s.entryPeriod}>2025 – Present</Text>
+          </View>
+          <Text style={s.entryDesc}>
+            Conceived, designed, and shipped 4 live web applications as sole product owner using AI-assisted development — from zero to deployed without a team: Be Fluent (language fluency), Islah (habit reform), Laravel Mentorship (developer mentorship), Easy Reading (accessibility reader).
+          </Text>
+          <Tags items={['Lovable', 'Claude AI', 'GitHub Copilot', 'Qodo', 'DeepSeek', 'React', 'Supabase', 'TypeScript']} />
         </View>
       </View>
 

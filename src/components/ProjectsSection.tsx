@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, ChevronLeft, ChevronRight, X, Lock } from "lucide-react";
+import { ExternalLink, ChevronLeft, ChevronRight, X, Lock, Zap } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 import hrCover from "@/assets/hr-cover.jpg";
 import eksImg from "@/assets/eks-app/eks.webp";
@@ -71,7 +71,7 @@ type Project = {
   coverPosition?: string;
   demoLabel?: string;
   repos?: { label: string; url: string }[];
-  category: "Backend" | "Full Stack" | "DevOps" | "Product";
+  category: "Backend" | "Full Stack" | "DevOps" | "Product" | "Vibe Coding";
 };
 
 const projects: Project[] = [
@@ -154,6 +154,46 @@ const projects: Project[] = [
     demo: "https://youtu.be/pQ4zjder14k",
     screenshots: [social1, social2, social3, social4, social5, social6, social7, social8, social9, social10, social12, social13, social14],
     category: "Full Stack",
+  },
+  {
+    title: "Be Fluent – Language Fluency App",
+    description: "A language fluency companion that helps users build speaking confidence through structured practice tracking and progress milestones. Conceived, designed, and shipped solo as product owner using AI-assisted development.",
+    tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Lovable", "Claude AI"],
+    highlights: ["Full Product Ownership", "Concept to Live App", "AI-Assisted Build"],
+    github: null,
+    demo: "https://be-fluent.lovable.app/",
+    demoLabel: "Visit App",
+    category: "Vibe Coding",
+  },
+  {
+    title: "Islah – Self-Improvement Tracker",
+    description: "A habit reform and self-improvement app inspired by the Arabic concept of islāh (to correct, to better oneself). Helps users commit to daily goals and track meaningful personal change. Shipped end-to-end as product owner.",
+    tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Lovable", "Claude AI"],
+    highlights: ["Full Product Ownership", "Habit Tracking", "AI-Assisted Build"],
+    github: null,
+    demo: "https://islah.lovable.app/",
+    demoLabel: "Visit App",
+    category: "Vibe Coding",
+  },
+  {
+    title: "Laravel Mentorship Platform",
+    description: "A developer mentorship platform connecting Laravel learners with experienced engineers. Features mentor profiles, session planning, and guided career progression paths. Owned and shipped independently using AI-powered workflows.",
+    tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Lovable", "Claude AI"],
+    highlights: ["Full Product Ownership", "Mentor Matching", "AI-Assisted Build"],
+    github: null,
+    demo: "https://laravel-mentorship.lovable.app/",
+    demoLabel: "Visit App",
+    category: "Vibe Coding",
+  },
+  {
+    title: "Easy Reading – Accessible Reader",
+    description: "A reading accessibility tool that makes digital content easier to process with adjustable typography, line spacing, and distraction-free focus modes. Built and shipped solo from concept to deployed product.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Lovable", "Claude AI"],
+    highlights: ["Full Product Ownership", "Accessibility Focus", "AI-Assisted Build"],
+    github: null,
+    demo: "https://easy-reading.lovable.app/",
+    demoLabel: "Visit App",
+    category: "Vibe Coding",
   },
   {
     title: "Hafezon - Islamic Productivity & Quran Tracker",
@@ -265,7 +305,14 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
         {/* Info */}
         <div className="p-6 space-y-5">
           <div className="flex items-start justify-between gap-4 flex-wrap">
-            <h3 className="text-2xl font-bold text-foreground">{project.title}</h3>
+            <div>
+              <h3 className="text-2xl font-bold text-foreground">{project.title}</h3>
+              {project.category === "Vibe Coding" && (
+                <span className="inline-flex items-center gap-1 text-xs text-primary font-semibold mt-1">
+                  <Zap className="h-3 w-3" /> Vibe Coded · Product Owner
+                </span>
+              )}
+            </div>
             <div className="flex gap-2 flex-shrink-0">
               {project.isPrivate && (
                 <span className="flex items-center gap-1.5 text-xs text-muted-foreground bg-muted/50 px-3 py-1.5 rounded-full">
@@ -327,8 +374,8 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
   );
 };
 
-type Category = "All" | "Backend" | "Full Stack" | "DevOps" | "Product";
-const TABS: Category[] = ["All", "Backend", "Full Stack", "DevOps", "Product"];
+type Category = "All" | "Backend" | "Full Stack" | "DevOps" | "Product" | "Vibe Coding";
+const TABS: Category[] = ["All", "Backend", "Full Stack", "DevOps", "Product", "Vibe Coding"];
 
 const ProjectsSection = () => {
   const [selected, setSelected] = useState<Project | null>(null);
@@ -344,7 +391,7 @@ const ProjectsSection = () => {
             Featured Projects
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A mix of backend systems, full-stack apps, DevOps pipelines, and passion projects
+            Backend systems, full-stack apps, DevOps pipelines, and AI-assisted products built with ownership from concept to delivery
           </p>
         </div>
 
@@ -386,6 +433,11 @@ const ProjectsSection = () => {
                   ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-primary/5">
                       <span className="text-primary/30 text-4xl font-bold">{project.title[0]}</span>
+                    </div>
+                  )}
+                  {project.category === "Vibe Coding" && (
+                    <div className="absolute top-2 left-2 flex items-center gap-1 bg-primary text-primary-foreground text-xs px-2 py-1 rounded-full font-semibold shadow">
+                      <Zap className="h-3 w-3" /> AI-Built
                     </div>
                   )}
                   {project.isPrivate && (
