@@ -51,7 +51,7 @@ const s = StyleSheet.create({
   },
   // Section
   section: {
-    marginBottom: 6,
+    marginBottom: 12,
   },
   sectionTitle: {
     fontFamily: 'Helvetica-Bold',
