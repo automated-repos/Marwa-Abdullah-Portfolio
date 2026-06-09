@@ -1,18 +1,19 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Cloud, 
-  Server, 
-  Database, 
-  GitBranch, 
-  Container, 
+import {
+  Cloud,
+  Server,
+  Database,
+  GitBranch,
+  Container,
   Monitor,
   Shield,
   Code,
   Cpu,
   Network,
   TrendingUp,
-  CheckCircle
+  CheckCircle,
+  Bot
 } from "lucide-react";
 
 const SkillsSection = () => {
@@ -60,10 +61,16 @@ const SkillsSection = () => {
         color: "text-yellow-400"
       },
       {
+        title: "AI-Assisted Development",
+        icon: Bot,
+        skills: ["Lovable", "Claude AI", "GitHub Copilot", "Qodo", "DeepSeek"],
+        color: "text-violet-400"
+      },
+      {
         title: "Currently Mastering",
-        icon: TrendingUp, 
+        icon: TrendingUp,
         skills: ["Kubernetes", "Terraform", "AWS", "Jenkins", "Prometheus", "GCP"],
-        color: "text-pink-400" // or "text-gray-400" to subtly differentiate it
+        color: "text-pink-400"
       }
     ];
 
