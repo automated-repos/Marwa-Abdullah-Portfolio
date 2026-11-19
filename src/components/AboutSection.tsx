@@ -1,15 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import logo from "@/assets/logo.jpg";
+import avatar from "@/assets/avatar.png";
 
 const AboutSection = () => {
   const highlights = [
-    "2+ years in Backend Development",
-    "Quality-focused mindset from testing experience", 
-    "PHP & Laravel specialist",
-    "DevOps expertise with CI/CD",
-    "Multi-tenant architecture expert",
-    "Resilient code practices"
+    "3 years of professional experience",
+    "QA background and testing mindset",
+    "Multi-tenant SaaS (healthcare & retail)",
+    "REST API design",
+    "CI/CD & deployment (GitHub Actions, Docker)",
+    "Reliability-focused code"
   ];
 
   return (
@@ -31,23 +31,23 @@ const AboutSection = () => {
           <div className="grid lg:grid-cols-3 gap-12 items-start">
             <div className="lg:col-span-2 space-y-6">
               <p className="text-lg text-foreground leading-relaxed">
-                Early in my career, I was deeply involved as a key contributor to a complex, multi-tenant backend project using PHP and Laravel. Just as we were heading to production, the company's focus shifted.
-              </p>
-              
-              <p className="text-lg text-foreground leading-relaxed">
-                I was asked to join the QA effort for a new project. Instead of seeing it as a setback, I embraced it. I discovered I had a talent for testing-for thinking of edge cases and potential flaws. For months, I helped ensure the new product was robust and reliable.
-              </p>
-              
-              <p className="text-lg text-foreground leading-relaxed">
-                But I missed building. So I made a decision: I would dedicate myself to returning to development, intentionally rebuilding my skills with a new perspective. I deepened my understanding of system design and distributed architecture - studying how data-intensive systems are built and where they break. I sharpened my Laravel and PHP knowledge through real interview preparation and hands-on exploration, not just documentation reading.
+                Early in my career, I was a key contributor to a complex multi-tenant Laravel backend. Just as we were heading to production, the company's focus shifted and I was asked to join the QA effort for a new product. Instead of seeing it as a setback, I embraced it and discovered a talent for spotting edge cases and the places where systems break.
               </p>
 
               <p className="text-lg text-foreground leading-relaxed">
-                Today, I am a more well-rounded engineer. I write backend code that is reliable by design - not just functional. That background in quality assurance didn't change my career path, it sharpened how I think about edge cases, API contracts, and system behaviour under real-world conditions.
+                But I missed building. So I deliberately returned to development, rebuilding my skills with that new perspective: going deeper into system design and how data-intensive systems fail, and sharpening my PHP and Laravel through hands-on work, not just documentation.
+              </p>
+
+              <p className="text-lg text-foreground leading-relaxed">
+                Testing also taught me that many failures don't start in the code. They start in how it's built, configured and deployed. So I followed reliability past the codebase and joined the DEPI DevOps track, where I provisioned an AWS EKS cluster with Terraform and automated deployments with Jenkins, Docker and Kubernetes. At Merspire I put that into practice every day: I manage the DigitalOcean servers behind Bareeq and the GitHub Actions pipeline that ships it to production.
+              </p>
+
+              <p className="text-lg text-foreground leading-relaxed">
+                Today I write backend code that is reliable by design, not just functional, and I care just as much about how it reaches production. QA didn't change my path. It sharpened how I think about edge cases, API contracts, and system behavior under real-world conditions.
               </p>
 
               <p className="text-lg text-primary font-semibold leading-relaxed">
-                My goal is to grow into a Senior Software Engineer - someone who doesn't just implement features but helps shape the architecture behind them. I'm looking for a backend role, ideally Laravel-focused, where I can take ownership, go deep, and keep getting better.
+                My goal is to grow into a Senior Software Engineer, someone who doesn't just implement features but helps shape the architecture behind them. I'm looking for a backend role, ideally Laravel-focused, where I can take ownership, go deep, and keep getting better.
               </p>
               <div className="pt-6">
                 <h4 className="text-xl font-semibold mb-4 text-primary">Key Expertise</h4>
@@ -71,12 +71,12 @@ const AboutSection = () => {
                 <div className="space-y-6">
                   <div className="text-center">
                     <img
-                      src={logo}
-                      alt="Marwa Abdullah Elawady"
-                      className="w-24 h-24 mx-auto mb-4 rounded-full object-cover border-2 border-primary/40 shadow-skill-glow"
+                      src={avatar}
+                      alt="Marwa Abdullah logo"
+                      className="w-28 h-28 mx-auto mb-4 rounded-full shadow-skill-glow"
                     />
                     <h4 className="text-xl font-bold text-primary mb-2">Marwa Abdullah Elawady</h4>
-                    <p className="text-muted-foreground text-sm">Backend Engineer & DevOps Enthusiast</p>
+                    <p className="text-muted-foreground text-sm">Backend Engineer · Laravel & DevOps</p>
                   </div>
                   
                   <div className="space-y-3 text-sm">
@@ -86,7 +86,7 @@ const AboutSection = () => {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Experience</span>
-                      <span className="text-foreground">2+ Years</span>
+                      <span className="text-foreground">3 Years</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Specialization</span>
@@ -95,11 +95,11 @@ const AboutSection = () => {
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Technologies</span>
                       
-                      <span className="text-foreground"> PHP, Laravel, Docker,CI/CD</span>
+                      <span className="text-foreground">PHP, Laravel, Docker, CI/CD</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Status</span>
-                      <span className="text-foreground">  Open to Remote & Freelance </span>
+                      <span className="text-foreground">Open to Full-time Roles</span>
                     </div>
 
                       

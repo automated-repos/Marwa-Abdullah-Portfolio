@@ -10,14 +10,14 @@ const ContactSection = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    const formData = new FormData(e.target);
+    const formData = new FormData(e.currentTarget);
     
     try {
-      const response = await fetch('https://formsubmit.co/Marwa.a.elawady@gmail.com', {
+      const response = await fetch('https://formsubmit.co/marwa.a.elawady@gmail.com', {
         method: 'POST',
         body: formData,
       });
@@ -48,7 +48,7 @@ const ContactSection = () => {
             Let's Connect
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to discuss your backend or DevOps needs? Let's build something amazing together.
+            Hiring for a backend role? I'd love to hear about your team and what you're building.
           </p>
         </div>
         
@@ -66,7 +66,7 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-foreground">Email</h4>
-                      <p className="text-muted-foreground">Marwa.a.elawady@gmail.com</p>
+                      <p className="text-muted-foreground">marwa.a.elawady@gmail.com</p>
                     </div>
                   </div>
                   
@@ -121,6 +121,8 @@ const ContactSection = () => {
                     <input type="hidden" name="_subject" value="New message from your portfolio!" />
                     <input type="hidden" name="_template" value="table" />
                     <input type="hidden" name="_captcha" value="false" />
+                    {/* Honeypot: bots fill it, FormSubmit drops those submissions */}
+                    <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" aria-hidden="true" />
                     
                     <div className="grid grid-cols-2 gap-4">
                       <div>

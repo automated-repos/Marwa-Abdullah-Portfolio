@@ -78,14 +78,14 @@ type Project = {
   coverPosition?: string;
   demoLabel?: string;
   repos?: { label: string; url: string }[];
-  category: "Backend" | "Full Stack" | "DevOps" | "Vibe Coding";
+  category: "Backend" | "Full Stack" | "DevOps" | "AI Products";
 };
 
 const projects: Project[] = [
   {
-    title: "Bareeq - Jewelry Store Management SaaS",
+    title: "Bareeq: Jewelry Store Management SaaS",
     description: "A live, production SaaS platform built for jewelry retailers. Handles QR-code-based POS and invoicing, real-time inventory tracking, supplier management, customer records, and multi-branch financial reporting. Currently expanding with IoT/NFC integration for fast, hands-free stocktaking.",
-    tech: ["Laravel", "PHP", "MySQL", "REST API", "Multi-tenant Architecture", "Redis", "Laravel Octane", "DigitalOcean", "Nginx", "GitHub Actions", "CI/CD", "QR Integration", "NFC / IoT"],
+    tech: ["Laravel", "PHP", "MySQL", "REST API", "Multi-tenant Architecture", "Redis", "Laravel Octane", "DigitalOcean", "AWS S3", "Nginx", "GitHub Actions", "CI/CD", "QR Integration", "NFC / IoT"],
     highlights: ["Live in Production", "Multi-branch support", "Real-time financial reporting", "NFC Stocktaking (WIP)"],
     demoLabel: "Visit Site",
     github: null,
@@ -96,12 +96,11 @@ const projects: Project[] = [
   },
   {
     title: "Multi-Tenant Healthcare SaaS",
-    description: "Secure multi-tenant SaaS for healthcare with HIPAA-compliant data isolation, custom domain routing, OAuth2 + Active Directory auth, and tenant-specific workflow configurations.",
-    tech: ["Laravel", "API", "Oauth2", "Active Directory", "Multi-tenancy", "MsSqlServer", "Queue Jobs", "Domain Routing"],
+    description: "Secure multi-tenant SaaS for healthcare with strict per-tenant data isolation, custom domain routing, OAuth2 + Active Directory auth, and tenant-specific workflow configurations.",
+    tech: ["Laravel", "REST API", "OAuth2", "Active Directory", "Multi-tenancy", "MS SQL Server", "Queue Jobs", "Domain Routing"],
     highlights: ["Data isolation", "Custom domains", "Scalable architecture"],
     github: null,
-    demo: "https://revixir.com",
-    demoLabel: "Visit Site",
+    demo: null,
     screenshots: [hrCover],
     isPrivate: true,
     category: "Backend",
@@ -133,16 +132,6 @@ const projects: Project[] = [
     category: "DevOps",
   },
   {
-    title: "Inventory Management System",
-    description: "Web-based Inventory Management System built as a capstone project for NTI. Provides businesses with tools for tracking inventory, managing suppliers, and monitoring sales operations.",
-    tech: ["Native PHP", "MySQL", "Bootstrap", "JavaScript", "AJAX"],
-    highlights: ["Stock Monitoring", "Sales Reporting", "Supplier management"],
-    github: "https://github.com/workytip/Invetory-Management-System",
-    demo: "https://youtu.be/pvrV-g5BclI",
-    screenshots: [imsDashboard, imsProductsList, imsProductsTable, imsAccounts, imsCategories, imsClients, imsInvoices, imsSales, imsStock, screen12, screen13],
-    category: "Full Stack",
-  },
-  {
     title: "Jumia Clone E-commerce Platform",
     description: "Full-featured e-commerce platform inspired by Jumia. Includes product catalog, shopping cart, order management, and admin dashboard with comprehensive product and user management.",
     tech: ["Laravel", "PHP", "MySQL", "Angular", "Bootstrap", "REST API", "Google login"],
@@ -163,18 +152,28 @@ const projects: Project[] = [
     category: "Full Stack",
   },
   {
-    title: "Musleh – Conflict Resolution & Message Rewriter",
-    description: "A communication mediation tool that helps people in conflict express themselves with clarity and empathy. Paste a message and Musleh reformulates it into a calmer, more constructive version — so both sides feel heard, not attacked. Built and shipped solo as product owner.",
+    title: "Inventory Management System",
+    description: "Web-based Inventory Management System built as a capstone project for NTI. Provides businesses with tools for tracking inventory, managing suppliers, and monitoring sales operations.",
+    tech: ["Native PHP", "MySQL", "Bootstrap", "JavaScript", "AJAX"],
+    highlights: ["Stock Monitoring", "Sales Reporting", "Supplier management"],
+    github: "https://github.com/workytip/Invetory-Management-System",
+    demo: "https://youtu.be/pvrV-g5BclI",
+    screenshots: [imsDashboard, imsProductsList, imsProductsTable, imsAccounts, imsCategories, imsClients, imsInvoices, imsSales, imsStock, screen12, screen13],
+    category: "Full Stack",
+  },
+  {
+    title: "Musleh: Conflict Resolution & Message Rewriter",
+    description: "A communication mediation tool that helps people in conflict express themselves with clarity and empathy. Paste a message and Musleh reformulates it into a calmer, more constructive version, so both sides feel heard, not attacked. Built and shipped solo as product owner.",
     tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Lovable", "Claude AI"],
     highlights: ["Full Product Ownership", "AI-Powered Rewriting", "Conflict Mediation"],
     github: null,
     demo: "https://islah.lovable.app/",
     demoLabel: "Visit App",
     screenshots: [mosleh1],
-    category: "Vibe Coding",
+    category: "AI Products",
   },
   {
-    title: "Mentor – Technical Growth Platform",
+    title: "Mentor: Technical Growth Platform",
     description: "A developer growth companion that turns self-learning into a structured journey. Features skill-level assessment, curated learning paths, problem-solving challenges, quizzes, project prompts, and an AI-powered smart mentor that adapts to where you are and pushes you forward.",
     tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Lovable", "Claude AI"],
     highlights: ["Full Product Ownership", "Adaptive Learning", "AI Smart Mentor"],
@@ -182,28 +181,28 @@ const projects: Project[] = [
     demo: "https://laravel-mentorship.lovable.app/",
     demoLabel: "Visit App",
     screenshots: [mentor1, mentor2, mentor3],
-    category: "Vibe Coding",
+    category: "AI Products",
   },
   {
-    title: "Qaree' – Daily Reading Tracker",
-    description: "A personal reading companion that turns passive reading into an active habit. Set daily page-based goals for any book, annotate key passages, leave inline comments on sections, and log new vocabulary and terminology — so every book becomes a living knowledge journal.",
+    title: "Qaree': Daily Reading Tracker",
+    description: "A personal reading companion that turns passive reading into an active habit. Set daily page-based goals for any book, annotate key passages, leave inline comments on sections, and log new vocabulary and terminology, so every book becomes a living knowledge journal.",
     tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Lovable", "Claude AI"],
     highlights: ["Full Product Ownership", "Reading Goals", "Vocabulary Tracking"],
     github: null,
     demo: "https://easy-reading.lovable.app/",
     demoLabel: "Visit App",
     screenshots: [qaree1, qaree2],
-    category: "Vibe Coding",
+    category: "AI Products",
   },
   {
-    title: "Hafezon - Islamic Productivity & Quran Tracker",
-    description: "Islamic productivity app covering Quran memorization planning and progress tracking, daily Muslim routine management, and a built-in Pomodoro timer for focused study sessions. Personal passion project - full concept and design by Marwa.",
+    title: "Hafezon: Islamic Productivity & Quran Tracker",
+    description: "Islamic productivity app covering Quran memorization planning and progress tracking, daily Muslim routine management, and a built-in Pomodoro timer for focused study sessions. A personal passion project: full concept and design by Marwa.",
     tech: ["React", "UI/UX Design", "Product Design", "Frontend"],
     highlights: ["Quran memorization tracker", "Daily routine planner", "Pomodoro focus sessions"],
     github: "https://github.com/workytip/hafezon",
     demo: "https://app.hafezon.site/",
     screenshots: [hafezon1, hafezon2, hafezon3, hafezon4, hafezon5, hafezon6, hafezon7],
-    category: "Vibe Coding",
+    category: "AI Products",
   },
 ];
 
@@ -246,6 +245,7 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
         {/* Close */}
         <button
           onClick={onClose}
+          aria-label="Close"
           className="absolute top-4 right-4 z-10 p-2 rounded-full bg-background/80 hover:bg-primary hover:text-primary-foreground text-muted-foreground transition-colors"
         >
           <X className="h-5 w-5" />
@@ -263,12 +263,14 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
               <>
                 <button
                   onClick={prev}
+                  aria-label="Previous screenshot"
                   className="absolute left-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 hover:bg-black/80 text-white transition-colors"
                 >
                   <ChevronLeft className="h-5 w-5" />
                 </button>
                 <button
                   onClick={next}
+                  aria-label="Next screenshot"
                   className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 hover:bg-black/80 text-white transition-colors"
                 >
                   <ChevronRight className="h-5 w-5" />
@@ -278,6 +280,7 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
                     <button
                       key={i}
                       onClick={() => setImgIndex(i)}
+                      aria-label={`Screenshot ${i + 1}`}
                       className={`w-2 h-2 rounded-full transition-colors ${i === imgIndex ? "bg-primary" : "bg-white/40"}`}
                     />
                   ))}
@@ -307,9 +310,9 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
           <div className="flex items-start justify-between gap-4 flex-wrap">
             <div>
               <h3 className="text-2xl font-bold text-foreground">{project.title}</h3>
-              {project.category === "Vibe Coding" && (
+              {project.category === "AI Products" && (
                 <span className="inline-flex items-center gap-1 text-xs text-primary font-semibold mt-1">
-                  <Zap className="h-3 w-3" /> Vibe Coded · Product Owner
+                  <Zap className="h-3 w-3" /> AI-Assisted · Solo Product
                 </span>
               )}
             </div>
@@ -374,8 +377,8 @@ const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => v
   );
 };
 
-type Category = "All" | "Backend" | "Full Stack" | "DevOps" | "Vibe Coding";
-const TABS: Category[] = ["All", "Backend", "Full Stack", "DevOps", "Vibe Coding"];
+type Category = "All" | "Backend" | "Full Stack" | "DevOps" | "AI Products";
+const TABS: Category[] = ["All", "Backend", "Full Stack", "DevOps", "AI Products"];
 
 const ProjectsSection = () => {
   const [selected, setSelected] = useState<Project | null>(null);
@@ -384,7 +387,7 @@ const ProjectsSection = () => {
   const filtered = activeTab === "All" ? projects : projects.filter(p => p.category === activeTab);
 
   return (
-    <section id="projects" className="py-20 px-6 bg-section-gradient">
+    <section id="projects" className="py-20 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
@@ -435,9 +438,9 @@ const ProjectsSection = () => {
                       <span className="text-primary/30 text-4xl font-bold">{project.title[0]}</span>
                     </div>
                   )}
-                  {project.category === "Vibe Coding" && (
+                  {project.category === "AI Products" && (
                     <div className="absolute top-2 left-2 flex items-center gap-1 bg-primary text-primary-foreground text-xs px-2 py-1 rounded-full font-semibold shadow">
-                      <Zap className="h-3 w-3" /> AI-Built
+                      <Zap className="h-3 w-3" /> AI-Assisted
                     </div>
                   )}
                   {project.isPrivate && (

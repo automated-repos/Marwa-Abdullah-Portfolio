@@ -2,7 +2,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   Cloud,
-  Server,
   Database,
   GitBranch,
   Container,
@@ -11,7 +10,6 @@ import {
   Code,
   Cpu,
   Network,
-  TrendingUp,
   CheckCircle,
   Bot
 } from "lucide-react";
@@ -19,28 +17,22 @@ import {
 const SkillsSection = () => {
     const skillCategories = [
       {
-        title: "AI-Assisted Development",
-        icon: Bot,
-        skills: ["Claude AI", "GitHub Copilot", "Qodo", "DeepSeek", "Lovable"],
-        color: "text-violet-400"
-      },
-      {
         title: "Backend Development",
         icon: Code,
         skills: ["PHP", "Laravel", "REST API", "OOP", "System Architecture"],
         color: "text-blue-400"
       },
       {
-        title: "Frontend Proficiency",
-        icon: Monitor,
-        skills: ["HTML", "CSS", "JavaScript","Bootstrap", "ReactJs","Angular" ],
-        color: "text-cyan-400"
+        title: "Laravel Ecosystem",
+        icon: Container,
+        skills: ["Eloquent ORM", "Queues & Jobs", "Multi-tenancy", "Livewire", "Redis", "Laravel Octane"],
+        color: "text-yellow-400"
       },
       {
-        title: "DevOps & CI/CD",
-        icon: GitBranch,
-        skills: ["Git", "GitHub Actions", "CI/CD Pipelines", "Docker","Ansible", "Bash Scripting"],
-        color: "text-green-400"
+        title: "Testing & QA",
+        icon: CheckCircle,
+        skills: ["API Testing (Postman)", "Test Case Design", "Edge-case Analysis", "Bug Reporting", "JIRA", "Agile/Scrum"],
+        color: "text-red-400"
       },
       {
         title: "Database Design & Management",
@@ -49,29 +41,29 @@ const SkillsSection = () => {
         color: "text-purple-400"
       },
       {
-        title: "Infrastructure & Deployment",
-        icon: Server,
-        skills: ["Linux", "Nginx/Apache", "Deployment Automation", "Performance Tuning"],
+        title: "DevOps & CI/CD",
+        icon: GitBranch,
+        skills: ["Git", "GitHub Actions", "Jenkins", "Docker", "Ansible", "Bash Scripting"],
+        color: "text-green-400"
+      },
+      {
+        title: "Cloud & Infrastructure",
+        icon: Cloud,
+        skills: ["Linux", "Nginx/Apache", "DigitalOcean", "AWS S3", "AWS EKS", "Kubernetes", "Terraform"],
         color: "text-orange-400"
       },
       {
-        title: "Development Practices",
-        icon: Network,
-        skills: ["QA Processes","JIRA", "Agile/Scrum", "Team Collaboration"],
-        color: "text-red-400"
+        title: "Frontend Proficiency",
+        icon: Monitor,
+        skills: ["HTML", "CSS", "JavaScript", "Bootstrap", "React", "Angular"],
+        color: "text-cyan-400"
       },
       {
-        title: "Laravel Ecosystem",
-        icon: Container,
-        skills: ["Livewire", "Multi-tenant Architecture", "Eloquent ORM", "Artisan"],
-        color: "text-yellow-400"
+        title: "AI-Assisted Development",
+        icon: Bot,
+        skills: ["Claude AI", "GitHub Copilot", "Qodo", "DeepSeek", "Lovable"],
+        color: "text-violet-400"
       },
-      // {
-      //   title: "Currently Mastering",
-      //   icon: TrendingUp,
-      //   skills: ["Kubernetes", "Terraform", "AWS", "Jenkins", "Prometheus", "GCP"],
-      //   color: "text-pink-400"
-      // }
     ];
 
   return (

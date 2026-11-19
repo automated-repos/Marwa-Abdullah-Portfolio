@@ -5,7 +5,7 @@ import { Building, Calendar, MapPin } from "lucide-react";
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: "Backend Engineer (Part-time)",
+      title: "Software Engineer (Part-time)",
       company: "Merspire",
       location: "Remote, Egypt",
       period: "Oct 2025 - Present",
@@ -18,14 +18,14 @@ const ExperienceSection = () => {
         "Owned end-to-end DevOps: deployment, monitoring, and infrastructure operations",
         "Applied QA discipline to ensure reliability across all critical financial workflows"
       ],
-      tech: ["Laravel", "PHP", "MySQL", "REST API", "DevOps", "QA Testing", "Multi-tenant Architecture", "Docker"]
+      tech: ["Laravel", "PHP", "MySQL", "REST API", "DevOps", "QA Testing", "Multi-tenant Architecture", "Docker", "AWS S3"]
     },
     {
       title: "Software Engineer",
       company: "nWeave",
       location: "Alexandria, Egypt",
-      period: "Feb 2023 - Dec 2024",
-      description: "Designed and maintained the backend architecture of a multi-tenant healthcare SaaS platform (AHS-nWeave) serving multiple independent healthcare providers. Transitioned into a QA Engineer role (May–Oct 2024), embedding quality assurance practices into the active development cycle.",
+      period: "Feb 2023 - Nov 2024",
+      description: "Designed and maintained the backend architecture of a multi-tenant healthcare SaaS platform (AHS-nWeave) serving multiple independent healthcare providers. Transitioned into a QA Engineer role (May to Oct 2024), embedding quality assurance practices into the active development cycle.",
       achievements: [
         "Architected the multi-tenant backend serving multiple healthcare providers under a unified system with strict data isolation per tenant",
         "Built RESTful APIs for complex healthcare workflows including provider-specific configurations, patient data management, and centralized reporting",
@@ -38,9 +38,9 @@ const ExperienceSection = () => {
       tech: ["Laravel", "PHP", "MS SQL Server", "MySQL", "REST API", "OAuth2", "Active Directory", "Multi-tenant Architecture", "Queue Jobs", "QA Testing"]
     },
     {
-      title: "Laravel Developer (Freelance)",
+      title: "Backend Developer (Freelance)",
       company: "Logic",
-      location: "Cairo, Egypt",
+      location: "Remote",
       period: "Feb 2024 - Aug 2024",
       description: "Freelance engagement. Built a custom HR Assessment System from scratch using Laravel and Livewire, handling the full project lifecycle from database design to frontend delivery.",
       achievements: [

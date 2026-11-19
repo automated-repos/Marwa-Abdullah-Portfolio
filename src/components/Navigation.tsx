@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Loader2 } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.svg";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,10 +31,10 @@ const Navigation = () => {
 
   const navItems = [
     { name: "About", href: "#about" },
+    { name: "Experience", href: "#experience" },
+    { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
     { name: "Education", href: "#education" },
-    { name: "Projects", href: "#projects" },
-    { name: "Experience", href: "#experience" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -56,8 +56,8 @@ const Navigation = () => {
           <div className="flex items-center gap-3">
             <img
               src={logo}
-              alt="Marwa Abdullah"
-              className="w-10 h-10 rounded-full object-cover border-2 border-primary/40"
+              alt="Marwa Abdullah logo"
+              className="w-10 h-10"
             />
             <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Marwa A.
@@ -90,6 +90,7 @@ const Navigation = () => {
             variant="ghost"
             size="icon"
             className="md:hidden text-foreground hover:text-primary"
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

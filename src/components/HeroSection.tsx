@@ -41,12 +41,11 @@ const HeroSection = () => {
           </h1>
           
           <h2 className="text-2xl md:text-3xl text-primary font-semibold">
-            Software Engineer · Backend & Laravel Specialist
+            Backend Engineer · Laravel & DevOps
           </h2>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-        Leveraging a unique perspective from quality assurance to develop and automate resilient Laravel systems that deliver consistent value and a reliable user experience. 
-
+            Building reliable Laravel backends with a tester's eye for edge cases, from API design to deployment.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
@@ -72,19 +71,19 @@ const HeroSection = () => {
           </div>
           
           <div className="flex gap-6 justify-center pt-8">
-            <a href="https://github.com/workytip" target="_blank" rel="noopener noreferrer">
+            <a aria-label="GitHub" href="https://github.com/workytip" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-primary hover:text-primary-foreground hover:bg-primary rounded-full w-12 h-12">
                 <Github className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="https://linkedin.com/in/marwa-abdullah-cs" target="_blank" rel="noopener noreferrer">
+            <a aria-label="LinkedIn" href="https://linkedin.com/in/marwa-abdullah-cs" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon" className="text-primary hover:text-primary-foreground hover:bg-primary rounded-full w-12 h-12">
                 <Linkedin className="h-6 w-6" />
               </Button>
             </a>
 
-            <a href="mailto:workytip@gmail.com">
+            <a aria-label="Email" href="mailto:marwa.a.elawady@gmail.com">
               <Button variant="ghost" size="icon" className="text-primary hover:text-primary-foreground hover:bg-primary rounded-full w-12 h-12">
                 <Mail className="h-6 w-6" />
               </Button>

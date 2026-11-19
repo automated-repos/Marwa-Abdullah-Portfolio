@@ -1,7 +1,10 @@
-import { Document, Page, Text, View, StyleSheet, Link } from '@react-pdf/renderer';
+import { Document, Page, Text, View, StyleSheet, Link, Font } from '@react-pdf/renderer';
+
+// Never split words with hyphens at line ends
+Font.registerHyphenationCallback((word) => [word]);
 
 const C = {
-  accent: '#0ea5e9',
+  accent: '#3d8a82',  // calm pastel teal, readable on white paper
   text: '#111827',
   sub: '#374151',
   muted: '#6b7280',
@@ -191,20 +194,20 @@ const SecTitle = ({ children }: { children: string }) => (
 );
 
 export const CVDocument = () => (
-  <Document title="Marwa Abdullah Elawady - CV" author="Marwa Abdullah Elawady">
+  <Document title="Marwa Abdullah Elawady CV" author="Marwa Abdullah Elawady">
     <Page size="A4" style={s.page}>
 
       {/* HEADER */}
       <View style={s.header}>
         <Text style={s.name}>Marwa Abdullah Elawady</Text>
-        <Text style={s.jobTitle}>Software Engineer  ·  Backend Engineer  ·  Laravel Specialist</Text>
+        <Text style={s.jobTitle}>Backend Engineer  ·  Laravel & DevOps</Text>
         <View style={s.contactRow}>
-          <Link src="mailto:marwa.a.elawady@gmail.com" style={s.contactItem}>Email</Link>
+          <Link src="mailto:marwa.a.elawady@gmail.com" style={s.contactItem}>marwa.a.elawady@gmail.com</Link>
           <Link src="https://wa.me/201099420890" style={s.contactItem}>+201099420890</Link>
           <Text style={s.contactItem}>Alexandria, Egypt</Text>
-          <Link src="https://github.com/workytip" style={s.contactItem}>GitHub</Link>
-          <Link src="https://linkedin.com/in/marwa-abdullah-cs" style={s.contactItem}>LinkedIn</Link>
-          <Link src="https://marwa.elawady.site" style={s.contactItem}>Portfolio</Link>
+          <Link src="https://github.com/workytip" style={s.contactItem}>github.com/workytip</Link>
+          <Link src="https://linkedin.com/in/marwa-abdullah-cs" style={s.contactItem}>linkedin.com/in/marwa-abdullah-cs</Link>
+          <Link src="https://marwa.elawady.site" style={s.contactItem}>marwa.elawady.site</Link>
         </View>
       </View>
 
@@ -212,7 +215,7 @@ export const CVDocument = () => (
       <View style={s.section}>
         <SecTitle>Profile</SecTitle>
         <Text style={s.profileText}>
-          Software Engineer with 2+ years of professional backend experience, specialising in PHP and Laravel. Proven track record delivering production systems, from multi-tenant SaaS platforms and RESTful APIs to full products owned solo using AI-assisted workflows (Claude AI, GitHub Copilot). Known for reliable, well-structured code shaped by a QA-informed background. Comfortable owning a backend end-to-end; actively leveraging AI tools to accelerate delivery and ship independently, and eager to grow into a Senior Engineer role contributing to architecture decisions and scalable solutions.
+          Backend Engineer with 3 years of professional experience building production Laravel systems, from multi-tenant SaaS platforms to RESTful APIs and CI/CD pipelines. A QA background shapes the work: designing for edge cases, clear API contracts, and reliable behavior under real-world conditions. Eager to own backend systems end-to-end and grow into a Senior Engineer role contributing to architecture decisions.
         </Text>
       </View>
 
@@ -222,25 +225,25 @@ export const CVDocument = () => (
 
         <View style={s.entry}>
           <View style={s.topRow}>
-            <Text style={s.entryTitle}>Backend Engineer (Part-time)</Text>
-            <Text style={s.entryPeriod}>Oct 2025 – Present</Text>
+            <Text style={s.entryTitle}>Software Engineer (Part-time)</Text>
+            <Text style={s.entryPeriod}>Oct 2025 - Present</Text>
           </View>
-          <Text style={s.entrySubtitle}>Merspire · Remote, Egypt</Text>
-          <Bullet text="Architected and built the complete backend for Bareeq — a live multi-tenant SaaS for jewelry retailers covering POS, inventory, supplier management, and multi-branch financial reporting" />
-          <Bullet text="Designed REST APIs, managed DigitalOcean server ops (Nginx, SSL), and built GitHub Actions CI/CD pipeline for zero-downtime deployments" />
+          <Text style={s.entrySubtitle}>Merspire · Remote, Egypt  ·  <Link src="https://bareeq.merspire.com" style={{ color: C.accent }}>bareeq.merspire.com</Link></Text>
+          <Bullet text="Architected and built the complete backend for Bareeq, a live multi-tenant SaaS for jewelry retailers covering POS, inventory, supplier management, and multi-branch financial reporting" />
+          <Bullet text="Designed REST APIs, managed DigitalOcean server ops (Nginx, SSL) and backups to AWS S3, and built a GitHub Actions CI/CD pipeline for automated deployments" />
           <Bullet text="Implemented QR-code product cataloging, automated invoice generation, and live treasury tracking across branches" />
           <Bullet text="Currently integrating IoT/NFC for fast, hands-free stocktaking; applied QA discipline across all critical financial workflows" />
-          <Tags items={['Laravel', 'PHP', 'MySQL', 'REST API', 'Redis', 'Laravel Octane', 'DigitalOcean', 'Nginx', 'GitHub Actions', 'CI/CD', 'Multi-tenant Architecture', 'NFC / IoT']} />
+          <Tags items={['Laravel', 'PHP', 'MySQL', 'REST API', 'Redis', 'Laravel Octane', 'DigitalOcean', 'AWS S3', 'Nginx', 'GitHub Actions', 'CI/CD', 'Multi-tenant Architecture', 'NFC / IoT']} />
         </View>
 
         <View style={s.entry}>
           <View style={s.topRow}>
             <Text style={s.entryTitle}>Software Engineer</Text>
-            <Text style={s.entryPeriod}>Feb 2023 – Dec 2024</Text>
+            <Text style={s.entryPeriod}>Feb 2023 - Nov 2024</Text>
           </View>
           <Text style={s.entrySubtitle}>nWeave · Alexandria, Egypt</Text>
           <Text style={s.entryDesc}>
-            Designed and maintained the backend of a multi-tenant healthcare SaaS (AHS-nWeave) serving multiple independent healthcare providers. Transitioned into QA Engineer (May–Oct 2024), embedding testing discipline directly into the development cycle.
+            Designed and maintained the backend of a multi-tenant healthcare SaaS (AHS-nWeave) serving multiple independent healthcare providers. Transitioned into QA Engineer (May to Oct 2024), embedding testing discipline directly into the development cycle.
           </Text>
           <Bullet text="Architected multi-tenant backend with strict data isolation, custom domain routing, and tenant-specific workflow configurations" />
           <Bullet text="Built RESTful APIs for complex healthcare workflows: provider configurations, patient data management, and centralized reporting" />
@@ -253,10 +256,10 @@ export const CVDocument = () => (
 
         <View style={s.entry}>
           <View style={s.topRow}>
-            <Text style={s.entryTitle}>Laravel Developer, Freelance</Text>
-            <Text style={s.entryPeriod}>Feb 2024 – Aug 2024</Text>
+            <Text style={s.entryTitle}>Backend Developer, Freelance</Text>
+            <Text style={s.entryPeriod}>Feb 2024 - Aug 2024</Text>
           </View>
-          <Text style={s.entrySubtitle}>Logic · Cairo, Egypt</Text>
+          <Text style={s.entrySubtitle}>Logic · Remote</Text>
           <Bullet text="Built a custom HR Assessment System using Laravel + Livewire, from database design to frontend delivery" />
           <Bullet text="Designed multi-stage assessment workflows with configurable scoring, bulk Excel import, and dynamic scheduling matrix" />
           <Bullet text="Delivered Chart.js analytics dashboard and automated PDF report generation for hiring decisions" />
@@ -271,11 +274,11 @@ export const CVDocument = () => (
           <View wrap={false} style={{ flexDirection: 'row', width: '100%' }}>
             <View style={s.skillCol}>
               <Text style={s.skillCatName}>Backend Development</Text>
-              <Text style={s.skillItems}>PHP, Laravel, REST API, OOP, System Architecture, Queue Jobs</Text>
+              <Text style={s.skillItems}>PHP, Laravel, REST API, OOP, System Architecture</Text>
             </View>
             <View style={s.skillCol}>
               <Text style={s.skillCatName}>DevOps & CI/CD</Text>
-              <Text style={s.skillItems}>Git, GitHub Actions, CI/CD Pipelines, Docker, Ansible, Bash Scripting</Text>
+              <Text style={s.skillItems}>Git, GitHub Actions, Jenkins, Docker, Ansible, Bash Scripting</Text>
             </View>
           </View>
           <View wrap={false} style={{ flexDirection: 'row', width: '100%' }}>
@@ -284,24 +287,24 @@ export const CVDocument = () => (
               <Text style={s.skillItems}>MySQL, MS SQL Server, Database Design, Query Optimization, Eloquent ORM</Text>
             </View>
             <View style={s.skillCol}>
-              <Text style={s.skillCatName}>Infrastructure & Deployment</Text>
-              <Text style={s.skillItems}>Linux, Nginx / Apache, Deployment Automation, Server Provisioning</Text>
+              <Text style={s.skillCatName}>Cloud & Infrastructure</Text>
+              <Text style={s.skillItems}>Linux, Nginx / Apache, DigitalOcean, AWS (S3, EKS), Kubernetes, Terraform</Text>
             </View>
           </View>
           <View wrap={false} style={{ flexDirection: 'row', width: '100%' }}>
             <View style={s.skillCol}>
               <Text style={s.skillCatName}>Laravel Ecosystem</Text>
-              <Text style={s.skillItems}>Livewire, Multi-tenant Architecture, Sanctum, Task Scheduling, Observers / Events, Artisan</Text>
+              <Text style={s.skillItems}>Queues & Scheduling, Multi-tenancy, Sanctum, Livewire, Redis, Laravel Octane</Text>
             </View>
             <View style={s.skillCol}>
               <Text style={s.skillCatName}>Frontend Proficiency</Text>
-              <Text style={s.skillItems}>HTML, CSS, JavaScript, Bootstrap, ReactJs, Angular</Text>
+              <Text style={s.skillItems}>HTML, CSS, JavaScript, Bootstrap, React, Angular</Text>
             </View>
           </View>
           <View wrap={false} style={{ flexDirection: 'row', width: '100%' }}>
             <View style={s.skillCol}>
-              <Text style={s.skillCatName}>Development Practices</Text>
-              <Text style={s.skillItems}>QA Processes, API Testing (Postman), JIRA, Agile / Scrum</Text>
+              <Text style={s.skillCatName}>Testing & QA</Text>
+              <Text style={s.skillItems}>API Testing (Postman), Test Case Design, QA Processes, JIRA, Agile / Scrum</Text>
             </View>
             <View style={s.skillCol}>
               <Text style={s.skillCatName}>AI-Assisted Development</Text>
@@ -321,45 +324,38 @@ export const CVDocument = () => (
 
         <View style={s.entrySmall}>
           <View style={s.topRow}>
-            <Text style={s.entryTitle}>Bareeq: Jewelry Store Management SaaS</Text>
-            <Text style={s.entryPeriod}>Oct 2025 – Present</Text>
+            <Text style={s.entryTitle}>Kubernetes CI/CD Pipeline on AWS EKS</Text>
+            <Text style={s.entryPeriod}>2025</Text>
           </View>
-          <Link src="https://bareeq.merspire.com" style={s.entrySubtitle}>Visit Site</Link>
+          <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 2 }}>
+            <Link src="https://github.com/workytip/eks-terraform-infra" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Terraform Infra</Link>
+            <Link src="https://github.com/workytip/k8s-applications" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>K8s Manifests</Link>
+            <Link src="https://k8s-ci-cd-blueprint.lovable.app/" style={{ ...s.entrySubtitle, marginBottom: 0 }}>Docs</Link>
+          </View>
           <Text style={s.entryDesc}>
-            Production multi-tenant SaaS for jewelry retailers: QR-based POS, real-time inventory, supplier management, customer CRM, multi-branch treasury tracking, and analytics dashboards. Currently integrating IoT/NFC for fast, hands-free stocktaking.
+            DEPI DevOps graduation project: Terraform provisions an AWS EKS cluster and VPC, Kubernetes manifests deploy containerized Node.js services, Jenkins automates build-and-deploy, Docker Hub stores images, and Nginx handles load balancing.
           </Text>
-          <Tags items={['Laravel', 'PHP', 'MySQL', 'REST API', 'Redis', 'Laravel Octane', 'Multi-tenant', 'QR Integration', 'NFC / IoT']} />
+          <Tags items={['Terraform', 'AWS EKS', 'Kubernetes', 'Jenkins', 'Docker', 'Nginx', 'IaC']} />
         </View>
 
         <View style={s.entrySmall}>
           <View style={s.topRow}>
-            <Text style={s.entryTitle}>Multi-Tenant Healthcare SaaS (AHS-nWeave)</Text>
-            <Text style={s.entryPeriod}>2023 – 2024</Text>
+            <Text style={s.entryTitle}>Social Media Content Scheduler</Text>
           </View>
-          <Link src="https://revixir.com" style={s.entrySubtitle}>Visit Site</Link>
+          <Link src="https://github.com/workytip/content-scheduler" style={s.entrySubtitle}>github.com/workytip/content-scheduler</Link>
           <Text style={s.entryDesc}>
-            Secure multi-tenant healthcare platform with HIPAA-compliant data isolation, custom domain routing, OAuth2 + Active Directory auth, and tenant-specific workflow configurations.
+            Full-stack scheduling dashboard where users create, queue, and publish posts to simulated platforms, driven by Laravel Queues and the task scheduler with a React frontend.
           </Text>
-          <Tags items={['Laravel', 'OAuth2', 'Active Directory', 'Multi-tenancy', 'MS SQL Server', 'Queue Jobs', 'Domain Routing']} />
+          <Tags items={['Laravel', 'React', 'MySQL', 'Queue Jobs', 'Scheduling', 'REST API']} />
         </View>
 
         <View style={s.entrySmall}>
           <View style={s.topRow}>
-            <Text style={s.entryTitle}>HR Assessment System</Text>
-            <Text style={s.entryPeriod}>2024</Text>
-          </View>
-          <Text style={s.entrySubtitle}>Logic · Freelance</Text>
-          <Text style={s.entryDesc}>Hiring automation platform with multi-stage assessments, bulk Excel data handling, dynamic interviewer-candidate scheduling matrix, and automated PDF report generation.</Text>
-          <Tags items={['Laravel', 'Livewire', 'PHP', 'MySQL', 'Chart.js', 'PDF Reports']} />
-        </View>
-
-        <View style={s.entrySmall}>
-          <View style={s.topRow}>
-            <Text style={s.entryTitle}>Vibe Coding Projects — Product Owner (4 Live Apps)</Text>
-            <Text style={s.entryPeriod}>2025 – Present</Text>
+            <Text style={s.entryTitle}>AI-Assisted Products (4 Live Apps)</Text>
+            <Text style={s.entryPeriod}>2025 - Present</Text>
           </View>
           <Text style={s.entryDesc}>
-            Conceived and shipped 4 live products solo as product owner using AI-assisted development workflows, from idea to deployed app without a team.
+            Conceived and shipped 4 live products solo with AI-assisted development, from idea to deployed app.
           </Text>
           <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 2 }}>
             <Link src="https://app.hafezon.site/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Hafezon</Link>
@@ -367,7 +363,7 @@ export const CVDocument = () => (
             <Link src="https://laravel-mentorship.lovable.app/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Mentor</Link>
             <Link src="https://easy-reading.lovable.app/" style={{ ...s.entrySubtitle, marginBottom: 0 }}>Qaree'</Link>
           </View>
-          <Tags items={['Lovable', 'Claude AI', 'GitHub Copilot', 'Qodo', 'DeepSeek', 'React', 'Supabase', 'TypeScript']} />
+          <Tags items={['React', 'TypeScript', 'Supabase', 'Claude AI', 'Lovable']} />
         </View>
       </View>
 
@@ -379,7 +375,7 @@ export const CVDocument = () => (
         <View style={{ ...s.entry, marginBottom: 4 }}>
           <View style={s.topRow}>
             <Text style={s.entryTitle}>Bachelor of Computers and Information Technology, Computer Science</Text>
-            <Text style={s.entryPeriod}>Sep 2013 – Jan 2019</Text>
+            <Text style={s.entryPeriod}>Sep 2013 - Jan 2019</Text>
           </View>
           <Text style={s.entrySubtitle}>Assiut University (AUN) · Assiut, Egypt</Text>
         </View>
@@ -390,7 +386,7 @@ export const CVDocument = () => (
         <View style={s.entrySmall}>
           <View style={s.topRow}>
             <Text style={s.entryTitle}>DevOps Engineer Track</Text>
-            <Text style={s.entryPeriod}>Jun 2025 – Jan 2026</Text>
+            <Text style={s.entryPeriod}>Jun 2025 - Dec 2025</Text>
           </View>
           <Text style={s.entrySubtitle}>DEPI-MCIT · Alexandria, Egypt · 6 Months</Text>
         </View>
@@ -398,7 +394,7 @@ export const CVDocument = () => (
         <View style={s.entrySmall}>
           <View style={s.topRow}>
             <Text style={s.entryTitle}>Cyber Security Scholarship</Text>
-            <Text style={s.entryPeriod}>Aug 2025 – Sep 2025</Text>
+            <Text style={s.entryPeriod}>Aug 2025 - Sep 2025</Text>
           </View>
           <Text style={s.entrySubtitle}>NTI-MCIT · Egypt</Text>
         </View>
@@ -406,25 +402,25 @@ export const CVDocument = () => (
         <View style={s.entrySmall}>
           <View style={s.topRow}>
             <Text style={s.entryTitle}>Open Source Applications Development: Laravel &amp; Angular</Text>
-            <Text style={s.entryPeriod}>Aug 2022 – Nov 2022</Text>
+            <Text style={s.entryPeriod}>Aug 2022 - Nov 2022</Text>
           </View>
           <Text style={s.entrySubtitle}>ITI-MCIT · Alexandria, Egypt · 4 Months</Text>
         </View>
 
         <View style={s.entrySmall}>
           <View style={s.topRow}>
-            <Text style={s.entryTitle}>Web Development Diploma: PHP &amp; MySQL</Text>
-            <Text style={s.entryPeriod}>2021</Text>
+            <Text style={s.entryTitle}>Web Development Track: PHP, MySQL &amp; Laravel</Text>
+            <Text style={s.entryPeriod}>Jun 2022 - Jul 2022</Text>
           </View>
-          <Text style={s.entrySubtitle}>NTI · Egypt</Text>
+          <Text style={s.entrySubtitle}>NTI-MCIT · Remote · 1 Month</Text>
         </View>
 
         <View style={s.entrySmall}>
           <View style={s.topRow}>
             <Text style={s.entryTitle}>Professional Full Stack Diploma: Web Development</Text>
-            <Text style={s.entryPeriod}>Aug 2020 – Nov 2020</Text>
+            <Text style={s.entryPeriod}>Aug 2021 - Oct 2021</Text>
           </View>
-          <Text style={s.entrySubtitle}>YAT Academy - MCIT · Remote, Egypt · 4 Months</Text>
+          <Text style={s.entrySubtitle}>YAT Learning Centers · Remote · 3 Months</Text>
         </View>
 
       </View>

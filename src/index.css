@@ -9,52 +9,52 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Dark DevOps Portfolio Theme */
-    --background: 222 84% 4.9%;
+    --background: 205 60% 5%;
     --foreground: 210 40% 98%;
 
-    --card: 224 71% 6%;
+    --card: 202 50% 7%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 224 71% 6%;
+    --popover: 202 50% 7%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 199 89% 48%;
+    --primary: 172 40% 70%;
     --primary-foreground: 210 40% 2%;
 
-    --secondary: 217 32% 17%;
+    --secondary: 200 30% 16%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217 32% 17%;
+    --muted: 200 30% 16%;
     --muted-foreground: 215 20% 65%;
 
-    --accent: 199 89% 48%;
+    --accent: 172 40% 70%;
     --accent-foreground: 210 40% 2%;
 
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 32% 17%;
-    --input: 217 32% 17%;
-    --ring: 199 89% 48%;
+    --border: 200 30% 16%;
+    --input: 200 30% 16%;
+    --ring: 172 40% 70%;
 
     --radius: 0.75rem;
 
     /* Portfolio specific colors */
-    --hero-gradient: linear-gradient(135deg, hsl(199 89% 48% / 0.1), hsl(217 32% 17% / 0.5));
-    --section-gradient: linear-gradient(180deg, hsl(222 84% 4.9%), hsl(224 71% 6%));
-    --skill-glow: 0 0 20px hsl(199 89% 48% / 0.3);
-    --text-glow: 0 0 10px hsl(199 89% 48% / 0.5);
+    --hero-gradient: linear-gradient(135deg, hsl(172 40% 70% / 0.1), hsl(200 30% 16% / 0.5));
+    --section-gradient: linear-gradient(180deg, hsl(205 60% 5%), hsl(202 50% 7%));
+    --skill-glow: 0 0 20px hsl(172 40% 70% / 0.3);
+    --text-glow: 0 0 10px hsl(172 40% 70% / 0.5);
     --card-shadow: 0 8px 32px hsl(0 0% 0% / 0.3);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
-    --sidebar-background: 222 84% 4.9%;
+    --sidebar-background: 205 60% 5%;
     --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 199 89% 48%;
+    --sidebar-primary: 172 40% 70%;
     --sidebar-primary-foreground: 210 40% 2%;
-    --sidebar-accent: 217 32% 17%;
+    --sidebar-accent: 200 30% 16%;
     --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 217 32% 17%;
-    --sidebar-ring: 199 89% 48%;
+    --sidebar-border: 200 30% 16%;
+    --sidebar-ring: 172 40% 70%;
   }
 
   .dark {

@@ -45,7 +45,7 @@ const EducationSection = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground">
-                Computer Science Department - Focused on software engineering, algorithms, 
+                Computer Science Department. Focused on software engineering, algorithms, 
                 data structures, and web development technologies.
               </p>
             </CardContent>
@@ -96,7 +96,7 @@ const EducationSection = () => {
                   <div className="flex flex-wrap gap-2 md:ml-auto">
                     <Badge variant="secondary" className="flex items-center gap-1">
                       <Calendar className="h-3 w-3" />
-                      Jun 2025 - Jan 2026
+                      Jun 2025 - Dec 2025
                     </Badge>
                     <Badge variant="outline" className="flex items-center gap-1">
                       <MapPin className="h-3 w-3" />
@@ -166,18 +166,18 @@ const EducationSection = () => {
               </CardContent>
             </Card>
 
-            {/* YAT Academy */}
+            {/* YAT Learning Centers */}
             <Card className="border border-primary/20 hover:border-primary/30 transition-colors">
               <CardHeader className="pb-3">
                 <div className="flex flex-col md:flex-row md:items-center gap-3">
                   <div>
                     <CardTitle className="text-lg text-foreground">Professional Full Stack Diploma</CardTitle>
-                    <p className="text-primary font-medium">YAT ACADEMY - MCIT</p>
+                    <p className="text-primary font-medium">YAT Learning Centers</p>
                   </div>
                   <div className="flex flex-wrap gap-2 md:ml-auto">
                     <Badge variant="secondary" className="flex items-center gap-1">
                       <Calendar className="h-3 w-3" />
-                      Aug 2020 - Nov 2020
+                      Aug 2021 - Oct 2021
                     </Badge>
                     <Badge variant="outline" className="flex items-center gap-1">
                       <MapPin className="h-3 w-3" />
@@ -188,7 +188,7 @@ const EducationSection = () => {
               </CardHeader>
               <CardContent className="pt-0">
                 <p className="text-muted-foreground text-sm">
-                  4 Months professional diploma focusing on Database, PHP and Laravel
+                  3 Months professional diploma focusing on Database, PHP and Laravel
                 </p>
               </CardContent>
             </Card>
