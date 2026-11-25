@@ -178,7 +178,7 @@ const projects: Project[] = [
     tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Lovable", "Claude AI"],
     highlights: ["Full Product Ownership", "Adaptive Learning", "AI Smart Mentor"],
     github: null,
-    demo: "https://laravel-mentorship.lovable.app/",
+    demo: "https://laravel-mentor.up.railway.app/",
     demoLabel: "Visit App",
     screenshots: [mentor1, mentor2, mentor3],
     category: "AI Products",

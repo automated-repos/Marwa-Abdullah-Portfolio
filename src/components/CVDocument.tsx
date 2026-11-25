@@ -360,7 +360,7 @@ export const CVDocument = () => (
           <View style={{ flexDirection: 'row', flexWrap: 'wrap', marginBottom: 2 }}>
             <Link src="https://app.hafezon.site/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Hafezon</Link>
             <Link src="https://islah.lovable.app/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Musleh</Link>
-            <Link src="https://laravel-mentorship.lovable.app/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Mentor</Link>
+            <Link src="https://laravel-mentor.up.railway.app/" style={{ ...s.entrySubtitle, marginRight: 12, marginBottom: 0 }}>Mentor</Link>
             <Link src="https://easy-reading.lovable.app/" style={{ ...s.entrySubtitle, marginBottom: 0 }}>Qaree'</Link>
           </View>
           <Tags items={['React', 'TypeScript', 'Supabase', 'Claude AI', 'Lovable']} />
